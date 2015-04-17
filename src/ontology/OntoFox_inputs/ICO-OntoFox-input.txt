@@ -9,6 +9,12 @@ http://purl.obolibrary.org/obo/ICO_0000001 #informed consent form
 http://purl.obolibrary.org/obo/ICO_0000138 # vaccine informed consent form
 http://purl.obolibrary.org/obo/OBI_0000810 #informed consent process
 http://purl.obolibrary.org/obo/ICO_0000002 #informed consent design
+http://purl.obolibrary.org/obo/ICO_0000170 #filled questionnaire
+http://purl.obolibrary.org/obo/ICO_0000171 #answer option
+http://purl.obolibrary.org/obo/ICO_0000173 # no answer option
+http://purl.obolibrary.org/obo/ICO_0000172 # yes answer option
+http://purl.obolibrary.org/obo/ICO_0000174 #filling informed consent form
+
 
 http://purl.obolibrary.org/obo/ICO_0000141
 includeAllChildren

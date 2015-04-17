@@ -1,0 +1,141 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/vico/VO_import.owl
+
+[Source ontology]
+VO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/VO_0000003 # ACAM2000
+http://purl.obolibrary.org/obo/VO_0000004 # ActHIB
+http://purl.obolibrary.org/obo/VO_0000005 # Adacel
+http://purl.obolibrary.org/obo/VO_0000006 # Afluria
+http://purl.obolibrary.org/obo/VO_0000007 # Attenuvax
+http://purl.obolibrary.org/obo/VO_0000014 # Biothrax
+http://purl.obolibrary.org/obo/VO_0000015 # Boostrix
+http://purl.obolibrary.org/obo/VO_0000028 # Comvax
+http://purl.obolibrary.org/obo/VO_0000029 # Daptacel
+http://purl.obolibrary.org/obo/VO_0000030 # DECAVAC
+http://purl.obolibrary.org/obo/VO_0000033 # Diphtheria and Tetanus Toxoids Adsorbed USP by Sanofi Pasteur Inc
+http://purl.obolibrary.org/obo/VO_0000034 # Diphtheria and Tetanus Toxoids Adsorbed by Sanofi Pasteur Ltd
+http://purl.obolibrary.org/obo/VO_0000035 # Dryvax
+http://purl.obolibrary.org/obo/VO_0000043 # FluLaval
+http://purl.obolibrary.org/obo/VO_0000044 # FluMist
+http://purl.obolibrary.org/obo/VO_0000045 # Fluarix
+http://purl.obolibrary.org/obo/VO_0000046 # Fluvirin
+http://purl.obolibrary.org/obo/VO_0000047 # Fluzone
+http://purl.obolibrary.org/obo/VO_0000049 # Gardasil
+http://purl.obolibrary.org/obo/VO_0000052 # Havrix
+http://purl.obolibrary.org/obo/VO_0000054 # IPOL
+http://purl.obolibrary.org/obo/VO_0000063 # Imovax Rabies (USA)
+http://purl.obolibrary.org/obo/VO_0000064 # Infanrix
+http://purl.obolibrary.org/obo/VO_0000065 # Influenza Virus Vaccine H5N1 (Sanofi Pasteur Inc)
+http://purl.obolibrary.org/obo/VO_0000066 # JE-Vax
+http://purl.obolibrary.org/obo/VO_0000067 # Kinrix
+http://purl.obolibrary.org/obo/VO_0000069 # M-M-R II
+http://purl.obolibrary.org/obo/VO_0000070 # M-M-Vax
+http://purl.obolibrary.org/obo/VO_0000071 # Menactra
+http://purl.obolibrary.org/obo/VO_0000072 # Menomune A C Y W135
+http://purl.obolibrary.org/obo/VO_0000073 # Meruvax II
+http://purl.obolibrary.org/obo/VO_0000074 # Mumpsvax
+http://purl.obolibrary.org/obo/VO_0000078 # Mycobax
+http://purl.obolibrary.org/obo/VO_0000079 # Fluzone High-dose
+http://purl.obolibrary.org/obo/VO_0000081 # Influenza A (H1N1) 2009 Monovalent Vaccine (Novartis)
+http://purl.obolibrary.org/obo/VO_0000082 # Pediarix
+http://purl.obolibrary.org/obo/VO_0000083 # PedvaxHIB
+http://purl.obolibrary.org/obo/VO_0000084 # Pentacel
+http://purl.obolibrary.org/obo/VO_0000085 # Plague Vaccine by Greer Laboratories Inc
+http://purl.obolibrary.org/obo/VO_0000088 # Pneumovax 23 (USA)
+http://purl.obolibrary.org/obo/VO_0000089 # Poliovax
+http://purl.obolibrary.org/obo/VO_0000090 # Prevnar (USA)
+http://purl.obolibrary.org/obo/VO_0000091 # ProQuad
+http://purl.obolibrary.org/obo/VO_0000092 # Fluzone intradermal
+http://purl.obolibrary.org/obo/VO_0000094 # RabAvert
+http://purl.obolibrary.org/obo/VO_0000095 # Rabies Vaccine Adsorbed by BioPort Corp
+http://purl.obolibrary.org/obo/VO_0000097 # RotaTeq
+http://purl.obolibrary.org/obo/VO_0000102 # TENIVAC
+http://purl.obolibrary.org/obo/VO_0000103 # TICE BCG
+http://purl.obolibrary.org/obo/VO_0000104 # TYPHIM Vi
+http://purl.obolibrary.org/obo/VO_0000109 # Tetanus Toxoid Adsorbed by Aventis Pasteur Inc
+http://purl.obolibrary.org/obo/VO_0000111 # Tetanus and Diphtheria Toxoids Adsorbed by MA Biologic Lab
+http://purl.obolibrary.org/obo/VO_0000112 # Tripedia
+http://purl.obolibrary.org/obo/VO_0000113 # Twinrix
+http://purl.obolibrary.org/obo/VO_0000119 # Varivax
+http://purl.obolibrary.org/obo/VO_0000120 # Vivotif (USA)
+http://purl.obolibrary.org/obo/VO_0000121 # YF-Vax
+http://purl.obolibrary.org/obo/VO_0000124 # Zostavax
+http://purl.obolibrary.org/obo/VO_0000160 # Influenza A (H1N1) 2009 Monovalent Vaccine (Sanofi Pasteur)
+http://purl.obolibrary.org/obo/VO_0000348 # Influenza A (H1N1) 2009 Monovalent Vaccine (CSL Limited)
+http://purl.obolibrary.org/obo/VO_0000418 # Menactra injection 0.5mL vial
+http://purl.obolibrary.org/obo/VO_0000433 # vaccinia virus vaccine
+http://purl.obolibrary.org/obo/VO_0000978 # Flublok
+http://purl.obolibrary.org/obo/VO_0000980 # Flucelvax
+http://purl.obolibrary.org/obo/VO_0000982 # FluMist Quadrivalent
+http://purl.obolibrary.org/obo/VO_0000983 # Fluarix Quadrivalent
+http://purl.obolibrary.org/obo/VO_0000984 # Tetanus Toxoid (for Boost use Only) by Sanofi Pasteur Inc
+http://purl.obolibrary.org/obo/VO_0001126 # Agriflu
+http://purl.obolibrary.org/obo/VO_0001244 # Prevnar 13
+http://purl.obolibrary.org/obo/VO_0001246 # Menveo
+http://purl.obolibrary.org/obo/VO_0002499 # Influenza A (H1N1) 2009 Monovalent Vaccine (IDB)
+http://purl.obolibrary.org/obo/VO_0010711 # Engerix-B
+http://purl.obolibrary.org/obo/VO_0010715 # Hiberix
+http://purl.obolibrary.org/obo/VO_0010716 # Imovax Polio
+http://purl.obolibrary.org/obo/VO_0010723 # Liquid Pedvax HIB
+http://purl.obolibrary.org/obo/VO_0010737 # Recombivax HB
+http://purl.obolibrary.org/obo/VO_0010745 # Vaqta
+http://purl.obolibrary.org/obo/VO_0011558 # Ixiaro
+http://purl.obolibrary.org/obo/VO_0011559 # Cervarix
+http://purl.obolibrary.org/obo/VO_0000424 # polyvalent pneumococcal vaccine
+http://purl.obolibrary.org/obo/VO_0000866 # Fluviral S/F
+http://purl.obolibrary.org/obo/VO_0000867 # Influvac
+http://purl.obolibrary.org/obo/VO_0000868 # Vaxigrip
+http://purl.obolibrary.org/obo/VO_0010705 # Actacel
+http://purl.obolibrary.org/obo/VO_0010706 # Avaxim
+http://purl.obolibrary.org/obo/VO_0010707 # Avaxim - Pediatric
+http://purl.obolibrary.org/obo/VO_0010708 # BCG Vaccine (Freeze-Dried) (by Sanofi Pasteur)
+http://purl.obolibrary.org/obo/VO_0010709 # DT Polio Adsorbed
+http://purl.obolibrary.org/obo/VO_0010710 # Dukoral
+http://purl.obolibrary.org/obo/VO_0010712 # Eolarix
+http://purl.obolibrary.org/obo/VO_0010713 # Epaxal
+http://purl.obolibrary.org/obo/VO_0010714 # FSME - IMMUN
+http://purl.obolibrary.org/obo/VO_0010717 # Imovax Rabies (Canada)
+http://purl.obolibrary.org/obo/VO_0010718 # Inactivated Poliomyelitis Vaccine - IPV
+http://purl.obolibrary.org/obo/VO_0010719 # Infanrix-hexa
+http://purl.obolibrary.org/obo/VO_0010720 # Infanrix/Hib
+http://purl.obolibrary.org/obo/VO_0010721 # Infanrix-IPV
+http://purl.obolibrary.org/obo/VO_0010722 # Infanrix -IPV/Hib
+http://purl.obolibrary.org/obo/VO_0010724 # Meningitec
+http://purl.obolibrary.org/obo/VO_0010725 # Meningococcal Polysaccharide Vaccine, Groups A & C, Menomune A/C
+http://purl.obolibrary.org/obo/VO_0010726 # Menjugate
+http://purl.obolibrary.org/obo/VO_0010727 # Menomune A/C/Y/W-135
+http://purl.obolibrary.org/obo/VO_0010728 # Mutacol
+http://purl.obolibrary.org/obo/VO_0010729 # Neisvac-C
+http://purl.obolibrary.org/obo/VO_0010730 # Pediacel
+http://purl.obolibrary.org/obo/VO_0010731 # Pneumo 23
+http://purl.obolibrary.org/obo/VO_0010732 # Pneumovax 23 (Canada)
+http://purl.obolibrary.org/obo/VO_0010733 # Prevnar (Canada)
+http://purl.obolibrary.org/obo/VO_0010734 # Priorix
+http://purl.obolibrary.org/obo/VO_0010735 # Priorix-Tetra
+http://purl.obolibrary.org/obo/VO_0010736 # Quadracel
+http://purl.obolibrary.org/obo/VO_0010738 # Rotarix
+http://purl.obolibrary.org/obo/VO_0010739 # Td Adsorbed
+http://purl.obolibrary.org/obo/VO_0010742 # Tripacel
+http://purl.obolibrary.org/obo/VO_0010743 # Twinrix Junior
+http://purl.obolibrary.org/obo/VO_0010744 # Typherix
+http://purl.obolibrary.org/obo/VO_0010746 # Varilrix
+http://purl.obolibrary.org/obo/VO_0010747 # Varivax III
+http://purl.obolibrary.org/obo/VO_0010748 # ViVaxim
+http://purl.obolibrary.org/obo/VO_0010749 # Vivotif (Canada)
+http://purl.obolibrary.org/obo/VO_0000299 # company
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001 #entity
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+
+[Source annotation URIs to be excluded]
+
