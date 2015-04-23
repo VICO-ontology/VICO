@@ -158,7 +158,7 @@
     <!-- http://purl.obolibrary.org/obo/VICO_0000019 -->
 
     <owl:Class rdf:about="&obo;VICO_0000019">
-        <rdfs:label xml:lang="en">Cosco vaccine informed consent form</rdfs:label>
+        <rdfs:label xml:lang="en">Costco vaccine informed consent form</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ICO_0000138"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -172,7 +172,7 @@
                 <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A vaccine informed consent form that is provided by Cosco</obo:IAO_0000115>
+        <obo:IAO_0000115>A vaccine informed consent form that is provided by Costco</obo:IAO_0000115>
         <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
     </owl:Class>
     
@@ -705,7 +705,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdf:type>
-        <rdfs:label xml:lang="en">answers of Cosco patient 5</rdfs:label>
+        <rdfs:label xml:lang="en">answers of Costco patient 5</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -714,7 +714,7 @@
 
     <owl:NamedIndividual rdf:about="&obo;VICO_0000012">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
-        <rdfs:label xml:lang="en">answers of Cosco patient 6</rdfs:label>
+        <rdfs:label xml:lang="en">answers of Costco patient 6</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -723,7 +723,7 @@
 
     <owl:NamedIndividual rdf:about="&obo;VICO_0000013">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
-        <rdfs:label xml:lang="en">answers of Cosco patient 7</rdfs:label>
+        <rdfs:label xml:lang="en">answers of Costco patient 7</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -732,7 +732,7 @@
 
     <owl:NamedIndividual rdf:about="&obo;VICO_0000014">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
-        <rdfs:label xml:lang="en">answers of Cosco patient 8</rdfs:label>
+        <rdfs:label xml:lang="en">answers of Costco patient 8</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -812,7 +812,7 @@
 
     <owl:NamedIndividual rdf:about="&obo;VICO_0000026">
         <rdf:type rdf:resource="&obo;VO_0000299"/>
-        <rdfs:label xml:lang="en">Cosco</rdfs:label>
+        <rdfs:label xml:lang="en">Costco</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
