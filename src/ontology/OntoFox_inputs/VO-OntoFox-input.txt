@@ -133,11 +133,20 @@ http://purl.obolibrary.org/obo/VO_0000001 # vaccine
 http://purl.obolibrary.org/obo/VO_0000001 # vaccine
 subClassOf http://purl.obolibrary.org/obo/OBI_0000047 # processed material
 
+http://purl.obolibrary.org/obo/VO_0000299 # company
+subClassOf http://purl.obolibrary.org/obo/OBI_0000245 # organization
+
+http://purl.obolibrary.org/obo/VO_0012185
+subClassOf http://purl.obolibrary.org/obo/VO_0000661
+
+http://purl.obolibrary.org/obo/VO_0000661
+subClassOf http://purl.obolibrary.org/obo/VO_0000001
+
 [Source term retrieval setting]
-includeAllIntermediates
+includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAxioms
+includeAllAxiomsRecursively
 
 [Source annotation URIs to be excluded]
 
