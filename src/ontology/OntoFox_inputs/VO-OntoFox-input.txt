@@ -126,16 +126,18 @@ http://purl.obolibrary.org/obo/VO_0010747 # Varivax III
 http://purl.obolibrary.org/obo/VO_0010748 # ViVaxim
 http://purl.obolibrary.org/obo/VO_0010749 # Vivotif (Canada)
 http://purl.obolibrary.org/obo/VO_0000299 # company
+http://purl.obolibrary.org/obo/VO_0000001 # vaccine
 
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/BFO_0000001 #entity
+http://purl.obolibrary.org/obo/VO_0000001 # vaccine
+subClassOf http://purl.obolibrary.org/obo/OBI_0000047 # processed material
 
 [Source term retrieval setting]
 includeAllIntermediates
 
 [Source annotation URIs]
-includeAllAxiomsRecursively
+includeAllAxioms
 
 [Source annotation URIs to be excluded]
 
