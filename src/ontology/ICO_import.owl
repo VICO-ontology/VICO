@@ -1050,11 +1050,11 @@
                 <owl:someValuesFrom rdf:resource="&obo;BFO_0000017"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000116>Philly2013 - AR: What differentiates a directive information entity from an information concretization is that it can have concretizations that are either qualities or realizable entities. The concretizations that are realizable entities are created when an individual chooses to take up the direction, i.e. has the intention to (try to) realize it.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">8/6/2009 Alan Ruttenberg: Changed label from &quot;information entity about a realizable&quot; after discussions at ICBO</obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">An information content entity whose concretizations indicate to their bearer how to realize them in a process.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
         <obo:IAO_0000116 xml:lang="en">Werner pushed back on calling it realizable information entity as it isn&apos;t realizable. However this name isn&apos;t right either. An example would be a recipe. The realizable entity would be a plan, but the information entity isn&apos;t about the plan, it, once concretized, *is* the plan. -Alan</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">directive information entity</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
@@ -1914,17 +1914,6 @@
 
     <owl:Class rdf:about="&obo;ICO_0000170">
         <rdfs:label xml:lang="en">filled questionnaire</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OBI_0001000"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;ICO_0000175"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001000"/>
         <obo:IAO_0000115 xml:lang="en">A questionaire that is filled up with answers.</obo:IAO_0000115>
         <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
@@ -2177,6 +2166,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2194,12 +2189,6 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string"></obo:IAO_0000118>
@@ -2358,6 +2347,12 @@
         <rdfs:label xml:lang="en">planning</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;BFO_0000015"/>
@@ -2367,12 +2362,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on &apos;planning&apos; were loosened to allow for informal processes that result in an &apos;ad hoc plan &apos;. This required changing from &apos;has_specified_output some plan specifiction&apos; to &apos;has_participant some plan specification&apos;. </obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Bjoern Peters</obo:IAO_0000117>
@@ -2437,6 +2426,17 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000001"/>
             </owl:Restriction>
@@ -2448,17 +2448,6 @@
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000087"/>
                         <owl:someValuesFrom rdf:resource="&obo;ICO_0000086"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>

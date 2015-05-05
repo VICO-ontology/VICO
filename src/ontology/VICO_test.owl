@@ -1,0 +1,687 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY external_byhand "http://purl.obolibrary.org/obo/vo/external/external_byhand.owl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;vico.owl#"
+     xml:base="&obo;vico.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:external_byhand="&obo;vo/external/external_byhand.owl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;vico.owl">
+        <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
+        <dc:date xml:lang="en">2015-04-15</dc:date>
+        <dc:creator>Jie Zheng</dc:creator>
+        <dc:description>The vaccination informed consent Ontology (VICO) is an ontology in the domain of vaccination/immunization informed consent.</dc:description>
+        <dc:creator>Asiyah Yu Lin</dc:creator>
+        <owl:versionInfo xml:lang="en">Arbor version; 0.1.3</owl:versionInfo>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="&obo;vico/ICO_import.owl."/>
+        <owl:imports rdf:resource="&obo;vico/RO_import.owl."/>
+        <owl:imports rdf:resource="&obo;vico/VO_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000025 -->
+
+    <owl:ObjectProperty rdf:about="&obo;VICO_0000025">
+        <rdfs:label xml:lang="en">documented by</rdfs:label>
+        <obo:IAO_0000117>YH</obo:IAO_0000117>
+        <obo:IAO_0000115>an object property that represents a relation between a document and an entity that issues the document.</obo:IAO_0000115>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000170 -->
+
+    <rdf:Description rdf:about="&obo;ICO_0000170">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0001000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;ICO_0000141"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;ICO_0000171"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000191 -->
+
+    <owl:Class rdf:about="&obo;ICO_0000191">
+        <rdfs:label xml:lang="en">questionare for Manitoba Seasonal Influenza and Pneumococcal vaccination consent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0000177"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000166"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <external_byhand:definition xml:lang="en">a questionnaire that is part of the vaccination informed consent form used for Seasonal Influenza and Phenumococcal vaccination in Manitoba, Canada.</external_byhand:definition>
+        <rdfs:seeAlso>http://www.gov.mb.ca/health/flu/docs/flupneumo_consentform.pdf</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAGO_0000001 -->
+
+    <owl:Class rdf:about="&obo;MIAGO_0000001">
+        <rdfs:label xml:lang="en">filled questionnaire with latex allergy</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ICO_0000170"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;ICO_0000144"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;ICO_0000172"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;ICO_0000170"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000008 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000008">
+        <rdfs:label xml:lang="en">filled questionnaire for Costco vaccination consent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0000022"/>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+        <obo:IAO_0000115>a questionnaire for Costco vaccination consent that is filled</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000009 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000009">
+        <rdfs:label xml:lang="en">filled questionnaire for Walgreens vaccination consent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0000021"/>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+        <obo:IAO_0000115>a questionnaire for Walgreens vaccination consent that is filled</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000019 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000019">
+        <rdfs:label xml:lang="en">Costco vaccination informed consent form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ICO_0000138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;VICO_0000022"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vaccination informed consent form that is provided by Costco</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000020 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000020">
+        <rdfs:label xml:lang="en">Walgreens vaccination informed consent form</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ICO_0000138"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;VICO_0000021"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A vaccination informed consent form that is provided by Walgreens</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000021 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000021">
+        <rdfs:label xml:lang="en">questionnaire for Walgreens vaccination  consent</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0001000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                        <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000159"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000165"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000160"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000163"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000164"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a questionnaire that is part of the Walgreens vaccination informed consent form.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+        <rdfs:seeAlso xml:lang="en">https://www.walgreens.com/images/pdfs/IN-2225/WAG_VAR_Form_EDIT_10172013_v1.pdf</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000022 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000022">
+        <rdfs:label xml:lang="en">questionnaire for Costco vaccination  consent</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0001000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                        <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000164"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000151"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+        <obo:IAO_0000115>a questionnaire that is part of the Costco vaccination informed consent form.</obo:IAO_0000115>
+        <rdfs:seeAlso>http://www2.costco.com/Images/Content/misc/PDF/Immunization_consent_form_v2-2012.pdf</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000177 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000177">
+        <rdfs:label xml:lang="en">questionnaire for Manitoba vaccination  consent</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0001000"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                        <owl:hasValue rdf:resource="&obo;MIAGO_0000002"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
+        <obo:IAO_0000115>a questionnaire that is part of the Manitoba vaccination informed consent form.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ICO_0000176 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ICO_0000176">
+        <rdf:type rdf:resource="&obo;VO_0000299"/>
+        <rdfs:label xml:lang="en">Walgreens</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MIAGO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;MIAGO_0000002">
+        <rdfs:label xml:lang="en">Manitoba government agency</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000010 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000010">
+        <rdf:type rdf:resource="&obo;VICO_0000008"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;ICO_0000146"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ICO_0000172"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;ICO_0000144"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ICO_0000172"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">answers of Costco patient 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000012">
+        <rdf:type rdf:resource="&obo;VICO_0000008"/>
+        <rdfs:label xml:lang="en">answers of Costco patient 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000013">
+        <rdf:type rdf:resource="&obo;VICO_0000008"/>
+        <rdfs:label xml:lang="en">answers of Costco patient 7</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000014 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000014">
+        <rdf:type rdf:resource="&obo;VICO_0000008"/>
+        <rdfs:label xml:lang="en">answers of Costco patient 8</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000016 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000016">
+        <rdf:type rdf:resource="&obo;VICO_0000009"/>
+        <rdfs:label xml:lang="en">answers of Walgreens patient 10</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000017">
+        <rdf:type rdf:resource="&obo;VICO_0000009"/>
+        <rdfs:label xml:lang="en">answers of Walgreens patient 11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000018 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000018">
+        <rdf:type rdf:resource="&obo;VICO_0000009"/>
+        <rdfs:label xml:lang="en">answers of Walgreens patient 12</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000026 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000026">
+        <rdf:type rdf:resource="&obo;VO_0000299"/>
+        <rdfs:label xml:lang="en">Costco</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
