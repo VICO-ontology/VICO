@@ -87,41 +87,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ICO_0000191 -->
-
-    <owl:Class rdf:about="&obo;ICO_0000191">
-        <rdfs:label xml:lang="en">questionare for Manitoba Seasonal Influenza and Pneumococcal vaccination consent</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;VICO_0000177"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000143"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000166"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <external_byhand:definition xml:lang="en">a questionnaire that is part of the vaccination informed consent form used for Seasonal Influenza and Phenumococcal vaccination in Manitoba, Canada.</external_byhand:definition>
-        <rdfs:seeAlso>http://www.gov.mb.ca/health/flu/docs/flupneumo_consentform.pdf</rdfs:seeAlso>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/VICO_0000008 -->
 
     <owl:Class rdf:about="&obo;VICO_0000008">
@@ -186,14 +151,14 @@
         <rdfs:subClassOf rdf:resource="&obo;ICO_0000138"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
-                <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;VICO_0000021"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;VICO_0000021"/>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A vaccination informed consent form that is provided by Walgreens</obo:IAO_0000115>
@@ -210,103 +175,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000159"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000157"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000160"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000152"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
-                <owl:hasValue rdf:resource="&obo;ICO_0000176"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000164"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000161"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000165"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000163"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -318,13 +187,109 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000150"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000163"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000160"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000147"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000161"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000165"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000157"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;VICO_0000199"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000152"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a questionnaire that is part of the Walgreens vaccination informed consent form.</obo:IAO_0000115>
@@ -342,7 +307,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -354,67 +319,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000169"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000151"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000154"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000167"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
-                <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000164"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000144"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -426,13 +331,55 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000154"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000164"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;VICO_0000025"/>
+                <owl:hasValue rdf:resource="&obo;VICO_0000026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000152"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000155"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000168"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -444,7 +391,25 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000148"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000156"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000158"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
@@ -462,11 +427,76 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000146"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
                 <owl:someValuesFrom rdf:resource="&obo;ICO_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000166"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000196"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>YH, YL</obo:IAO_0000117>
         <obo:IAO_0000115>a questionnaire that is part of the Manitoba vaccination informed consent form.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000198 -->
+
+    <owl:Class rdf:about="&obo;VICO_0000198">
+        <rdfs:label xml:lang="en">questionare for Manitoba Seasonal Influenza and Pneumococcal vaccination consent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0000177"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000142"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000166"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000149"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002180"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000143"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:seeAlso>http://www.gov.mb.ca/health/flu/docs/flupneumo_consentform.pdf</rdfs:seeAlso>
+        <external_byhand:definition xml:lang="en">a questionnaire that is part of the vaccination informed consent form used for Seasonal Influenza and Phenumococcal vaccination in Manitoba, Canada.</external_byhand:definition>
     </owl:Class>
     
 
@@ -528,10 +558,7 @@
 
     <!-- http://purl.obolibrary.org/obo/ICO_0000176 -->
 
-    <owl:NamedIndividual rdf:about="&obo;ICO_0000176">
-        <rdf:type rdf:resource="&obo;VO_0000299"/>
-        <rdfs:label xml:lang="en">Walgreens</rdfs:label>
-    </owl:NamedIndividual>
+    <owl:NamedIndividual rdf:about="&obo;ICO_0000176"/>
     
 
 
@@ -814,6 +841,15 @@
     <owl:NamedIndividual rdf:about="&obo;VICO_0000026">
         <rdf:type rdf:resource="&obo;VO_0000299"/>
         <rdfs:label xml:lang="en">Costco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0000199 -->
+
+    <owl:NamedIndividual rdf:about="&obo;VICO_0000199">
+        <rdf:type rdf:resource="&obo;VO_0000299"/>
+        <rdfs:label xml:lang="en">Walgreens</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 
