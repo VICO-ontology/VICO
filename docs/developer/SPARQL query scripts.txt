@@ -1,0 +1,132 @@
+#Example 3: 
+#To find the number of all class terms of an ontology
+#To find all object properties, use owl:ObjectProperty instead of owl:Class
+#To find all Datatype properties, use owl:AnnotationProperty instead of owl:Class
+#To find all Annotation properties, use owl:DatatypeProperty instead of owl:Class
+
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+SELECT ?s ?label
+FROM <http://purl.obolibrary.org/obo/merged/VO>
+WHERE
+{
+?s a owl:Class .
+?s rdfs:label ?label .
+?s rdfs:subClassOf ?s1 .
+?s1 owl:onProperty obo:bearer_of; owl:someValuesFrom obo:VO_0000812 .
+
+}
+
+--
+
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT ?s ?label
+FROM <http://purl.obolibrary.org/obo/merged/VO>
+WHERE
+{
+?s rdfs:label ?label .
+?s rdfs:subClassOf ?s1 .
+?s1 owl:onProperty obo:bearer_of ;owl:someValuesFrom obo:VO_0000812 .
+?s rdfs:subClassOf ?s2 .
+?s2 owl:onProperty obo:VO_0001243 ;owl:someValuesFrom obo:NCBITaxon_9606 .
+
+}
+
+
+--
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT Distinct ?s ?label
+FROM <http://purl.obolibrary.org/obo/merged/VO>
+WHERE
+{
+?s rdfs:label ?label .
+?s rdfs:subClassOf ?s1 .
+OPTIONAL {?s1 owl:onProperty obo:bearer_of ;owl:someValuesFrom obo:VO_0000812 .}
+OPTIONAL {?s1 owl:onProperty obo:bearer_of ;owl:someValuesFrom obo:VO_0000864 .}
+?s rdfs:subClassOf ?s2 .
+?s2 owl:onProperty obo:VO_0001243 ;owl:someValuesFrom obo:NCBITaxon_9606 .
+
+}
+
+--
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+
+SELECT count(Distinct ?s) 
+FROM <http://purl.obolibrary.org/obo/merged/VO>
+WHERE
+{
+?s rdfs:label ?label .
+?s rdfs:subClassOf ?s1 .
+
+{?s1 owl:onProperty obo:bearer_of ;owl:someValuesFrom obo:VO_0000812 .}
+UNION
+{?s1 owl:onProperty obo:bearer_of ;owl:someValuesFrom obo:VO_0000864 .}
+
+?s rdfs:subClassOf ?s2 .
+?s2 owl:onProperty obo:VO_0001243 ;owl:someValuesFrom obo:NCBITaxon_9606 .
+
+}
+
+--
+
+'filled questionnaire' and ('has component' some ('question whether allergic to egg' and 'has component' some 'yes answer text entity')) 
+
+SPARQL code run in Protege: 
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+SELECT ?question
+WHERE 
+{ 
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
+  ?questionnaire2 rdfs:label ?label2 .
+  ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+}
+
+
+--
+Compare: 
+SPARQL query on Ontobee: 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+SELECT distinct ?question ?label3
+FROM <http://purl.obolibrary.org/obo/merged/VICO>  #this line is optional
+WHERE 
+{ 
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
+  ?questionnaire2 rdfs:label ?label2 .
+  ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
+?question rdfs:label ?label3 .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+}
+
