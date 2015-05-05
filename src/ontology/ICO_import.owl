@@ -1755,6 +1755,7 @@
     <!-- http://purl.obolibrary.org/obo/ICO_0000166 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/ICO_0000166">
+        <rdfs:label xml:lang="en">question on long-term health problem</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ICO_0000141"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1762,7 +1763,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICO_0000064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a question textual entity that asks whether the questionee has a a long-term health problem</obo:IAO_0000115>
+        <obo:IAO_0000115>a question textual entity that asks whether the questionee has a a long-term health problem with heart disease, lung disease, asthma, kidney disease, metabolic disease (e.g., diabetes), anemia or other blood disorder.</obo:IAO_0000115>
         <obo:IAO_0000117>YL, YH</obo:IAO_0000117>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ico.owl"/>
     </owl:Class>
@@ -2388,18 +2389,6 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000144"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2417,6 +2406,18 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000144"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000118>
@@ -2575,6 +2576,12 @@
         <rdfs:label xml:lang="en">planning</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000007"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000007"/>
@@ -2584,12 +2591,6 @@
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000104"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on &#39;planning&#39; were loosened to allow for informal processes that result in an &#39;ad hoc plan &#39;. This required changing from &#39;has_specified_output some plan specifiction&#39; to &#39;has_participant some plan specification&#39;. </obo:IAO_0000116>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000117>
@@ -2658,6 +2659,17 @@
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICO_0000086"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000202"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
@@ -2667,17 +2679,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ICO_0000086"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">09/28/2009 Alan Ruttenberg: This is made a subclass of the higher level processual entity in BFO because I don&#39;t want to take a stand on whether it is a process aggregate. Analogous to the situation with Material entity.</obo:IAO_0000116>
