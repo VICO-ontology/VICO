@@ -1,0 +1,74 @@
+# The following queries the common questions in Costco and Walgreens vaccination informed consent form
+
+
+# SPARQL query run on the SPARQL query plug-in on Protege 5.0
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT ?question
+
+WHERE
+{
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
+  ?questionnaire2 rdfs:label ?label2 .
+  ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+
+}
+
+
+# SPARQL query run on the Ontobee SPARQL endpoint based on virtuso RDF store.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT distinct ?question ?label
+WHERE
+{
+
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
+  ?questionnaire2 rdfs:label ?label2 .
+  ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+
+}
+
+13 Results:  (run on http://sparql.hegroup.org/sparql/ at 8:29pm CDT 05/05/2015)
+question 	label
+http://purl.obolibrary.org/obo/ICO_0000146 	question whether allergic to egg
+http://purl.obolibrary.org/obo/ICO_0000156 	question on vaccination in past 4 weeks
+http://purl.obolibrary.org/obo/ICO_0000142 	question whether currently sick
+http://purl.obolibrary.org/obo/ICO_0000152 	question on woman pregnancy
+http://purl.obolibrary.org/obo/ICO_0000168 	question on cancer
+http://purl.obolibrary.org/obo/ICO_0000169 	question on leukemia
+http://purl.obolibrary.org/obo/ICO_0000150 	seizure disorder question
+http://purl.obolibrary.org/obo/ICO_0000164 	question on asthma or wheezing history
+http://purl.obolibrary.org/obo/ICO_0000158 	question on blood transfusion in past year
+http://purl.obolibrary.org/obo/ICO_0000155 	X-ray treatment question
+http://purl.obolibrary.org/obo/ICO_0000147 	question whether allergic to medication
+http://purl.obolibrary.org/obo/ICO_0000148 	question whether allergic to vaccine
+http://purl.obolibrary.org/obo/ICO_0000144 	question whether allergic to latex
