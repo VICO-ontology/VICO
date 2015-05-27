@@ -130,3 +130,191 @@ WHERE
   FILTER REGEX(str(?label2), "Walgreens") .
 }
 
+
+
+----
+# search 'Costco' and 'Walgreens' questionniare and compare questions
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT ?label (COUNT(?label) as ?total_q)
+WHERE
+{
+
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Costco") .}
+ UNION
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Walgreens") .}
+}
+GROUP BY ?label
+
+label 	total_q
+question whether allergic to latex 	4
+question whether allergic to medication 	4
+question on woman pregnancy 	4
+question on skin test in past 4 weeks 	2
+seizure disorder question 	4
+X-ray treatment question 	4
+question on thymus disease 	2
+question whether currently sick 	4
+question on asthma or wheezing history 	4
+question on leukemia 	4
+question whether allergic to vaccine 	4
+question on long-term heart disease 	2
+question on blood transfusion in past year 	4
+immunocompromisation question 	2
+question on vaccination in past 4 weeks 	4
+question on serious nasal condition 	2
+cortisone treatment question 	2
+question on high-dose steroid therapy for longer than 2 weeks 	2
+question on current aspirin therapy 	2
+question whether allergic to egg 	4
+question on current antibiotics usage 	2
+question on reaction after immunization 	2
+question on cancer 	4
+
+
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+
+SELECT distinct ?label ?question ?label1
+WHERE
+{
+
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Costco") .}
+ UNION
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Walgreens") .}
+}
+ORDER BY ?label
+
+
+label 	question 	label1
+X-ray treatment question 	http://purl.obolibrary.org/obo/ICO_0000155 	questionnaire for Costco vaccination consent
+X-ray treatment question 	http://purl.obolibrary.org/obo/ICO_0000155 	questionnaire for Walgreens vaccination consent
+cortisone treatment question 	http://purl.obolibrary.org/obo/ICO_0000154 	questionnaire for Costco vaccination consent
+immunocompromisation question 	http://purl.obolibrary.org/obo/ICO_0000151 	questionnaire for Costco vaccination consent
+question on asthma or wheezing history 	http://purl.obolibrary.org/obo/ICO_0000164 	questionnaire for Costco vaccination consent
+question on asthma or wheezing history 	http://purl.obolibrary.org/obo/ICO_0000164 	questionnaire for Walgreens vaccination consent
+question on blood transfusion in past year 	http://purl.obolibrary.org/obo/ICO_0000158 	questionnaire for Costco vaccination consent
+question on blood transfusion in past year 	http://purl.obolibrary.org/obo/ICO_0000158 	questionnaire for Walgreens vaccination consent
+question on cancer 	http://purl.obolibrary.org/obo/ICO_0000168 	questionnaire for Costco vaccination consent
+question on cancer 	http://purl.obolibrary.org/obo/ICO_0000168 	questionnaire for Walgreens vaccination consent
+question on current antibiotics usage 	http://purl.obolibrary.org/obo/ICO_0000161 	questionnaire for Walgreens vaccination consent
+question on current aspirin therapy 	http://purl.obolibrary.org/obo/ICO_0000163 	questionnaire for Walgreens vaccination consent
+question on high-dose steroid therapy for longer than 2 weeks 	http://purl.obolibrary.org/obo/ICO_0000159 	questionnaire for Walgreens vaccination consent
+question on leukemia 	http://purl.obolibrary.org/obo/ICO_0000169 	questionnaire for Costco vaccination consent
+question on leukemia 	http://purl.obolibrary.org/obo/ICO_0000169 	questionnaire for Walgreens vaccination consent
+question on long-term heart disease 	http://purl.obolibrary.org/obo/ICO_0000167 	questionnaire for Costco vaccination consent
+question on reaction after immunization 	http://purl.obolibrary.org/obo/ICO_0000149 	questionnaire for Costco vaccination consent
+question on serious nasal condition 	http://purl.obolibrary.org/obo/ICO_0000165 	questionnaire for Walgreens vaccination consent
+question on skin test in past 4 weeks 	http://purl.obolibrary.org/obo/ICO_0000157 	questionnaire for Walgreens vaccination consent
+question on thymus disease 	http://purl.obolibrary.org/obo/ICO_0000160 	questionnaire for Walgreens vaccination consent
+question on vaccination in past 4 weeks 	http://purl.obolibrary.org/obo/ICO_0000156 	questionnaire for Costco vaccination consent
+question on vaccination in past 4 weeks 	http://purl.obolibrary.org/obo/ICO_0000156 	questionnaire for Walgreens vaccination consent
+question on woman pregnancy 	http://purl.obolibrary.org/obo/ICO_0000152 	questionnaire for Costco vaccination consent
+question on woman pregnancy 	http://purl.obolibrary.org/obo/ICO_0000152 	questionnaire for Walgreens vaccination consent
+question whether allergic to latex 	http://purl.obolibrary.org/obo/ICO_0000144 	questionnaire for Costco vaccination consent
+question whether allergic to latex 	http://purl.obolibrary.org/obo/ICO_0000144 	questionnaire for Walgreens vaccination consent
+question whether allergic to egg 	http://purl.obolibrary.org/obo/ICO_0000146 	questionnaire for Costco vaccination consent
+question whether allergic to egg 	http://purl.obolibrary.org/obo/ICO_0000146 	questionnaire for Walgreens vaccination consent
+question whether allergic to medication 	http://purl.obolibrary.org/obo/ICO_0000147 	questionnaire for Costco vaccination consent
+question whether allergic to medication 	http://purl.obolibrary.org/obo/ICO_0000147 	questionnaire for Walgreens vaccination consent
+question whether allergic to vaccine 	http://purl.obolibrary.org/obo/ICO_0000148 	questionnaire for Costco vaccination consent
+question whether allergic to vaccine 	http://purl.obolibrary.org/obo/ICO_0000148 	questionnaire for Walgreens vaccination consent
+question whether currently sick 	http://purl.obolibrary.org/obo/ICO_0000142 	questionnaire for Costco vaccination consent
+question whether currently sick 	http://purl.obolibrary.org/obo/ICO_0000142 	questionnaire for Walgreens vaccination consent
+seizure disorder question 	http://purl.obolibrary.org/obo/ICO_0000150 	questionnaire for Costco vaccination consent
+seizure disorder question 	http://purl.obolibrary.org/obo/ICO_0000150 	questionnaire for Walgreens vaccination consent
+
+
+== test for comparison 
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+
+SELECT distinct ?label ?question ?label1
+WHERE {
+  { SELECT ?question 
+    WHERE  
+    {
+
+    {?questionnaire1 rdfs:subClassOf questionnaire: .
+     ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+     ?questionnaire1 rdfs:label ?label1 .
+     ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+     FILTER REGEX(str(?label1), "Costco") .}
+    UNION
+    {?questionnaire1 rdfs:subClassOf questionnaire: .
+     ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+     ?questionnaire1 rdfs:label ?label1 .
+     ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+     FILTER REGEX(str(?label1), "Walgreens") .}
+}
+}
+?question rdfs:label ?label . }
+ORDER BY ?label
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+
+SELECT distinct ?label ?question (count(?label) as ?total_label)
+WHERE {
+  { SELECT ?question 
+    WHERE  
+    {
+    {?questionnaire1 rdfs:subClassOf questionnaire: .
+     ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+     ?questionnaire1 rdfs:label ?label1 .
+     ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+     FILTER REGEX(str(?label1), "Costco") .}
+    UNION
+    {?questionnaire1 rdfs:subClassOf questionnaire: .
+     ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+     ?questionnaire1 rdfs:label ?label1 .
+     ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+     FILTER REGEX(str(?label1), "Walgreens") .}
+    }
+    }
+  ?question rdfs:label ?label . }
