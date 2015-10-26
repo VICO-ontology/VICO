@@ -145,6 +145,7 @@ PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 
 SELECT ?label (COUNT(?label) as ?total_q)
+FROM <http://purl.obolibrary.org/obo/merged/VICO>
 WHERE
 {
 
@@ -165,29 +166,31 @@ WHERE
 GROUP BY ?label
 
 label 	total_q
-question whether allergic to latex 	4
-question whether allergic to medication 	4
-question on woman pregnancy 	4
-question on skin test in past 4 weeks 	2
-seizure disorder question 	4
-X-ray treatment question 	4
-question on thymus disease 	2
-question whether currently sick 	4
-question on asthma or wheezing history 	4
-question on leukemia 	4
-question whether allergic to vaccine 	4
-question on long-term heart disease 	2
-question on blood transfusion in past year 	4
-immunocompromisation question 	2
-question on vaccination in past 4 weeks 	4
-question on serious nasal condition 	2
-cortisone treatment question 	2
-question on high-dose steroid therapy for longer than 2 weeks 	2
-question on current aspirin therapy 	2
-question whether allergic to egg 	4
-question on current antibiotics usage 	2
-question on reaction after immunization 	2
-question on cancer 	4
+question whether allergic to latex 	2
+question whether allergic to medication 	2
+question on woman pregnancy 	2
+question on skin test in past 4 weeks 	1
+seizure disorder question 	2
+X-ray treatment question 	2
+question on thymus disease 	1
+question whether currently sick 	2
+question on asthma or wheezing history 	2
+question on leukemia 	2
+question whether allergic to vaccine 	2
+question on long-term heart disease 	1
+question on blood transfusion in past year 	2
+immunocompromisation question 	1
+question on vaccination in past 4 weeks 	2
+question on serious nasal condition 	1
+cortisone treatment question 	1
+question on high-dose steroid therapy for longer than 2 weeks 	1
+question on current aspirin therapy 	1
+question whether allergic to egg 	2
+question on current antibiotics usage 	1
+question on reaction after immunization 	1
+question on cancer 	2
+
+
 
 
 
@@ -318,3 +321,42 @@ WHERE {
     }
     }
   ?question rdfs:label ?label . }
+  
+  
+  
+== Search what kind of questions being asked in Walgreens and Costco
+ 
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT distinct ?label 
+FROM <http://purl.obolibrary.org/obo/merged/VICO>
+WHERE
+{
+
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf ?question_kind .
+  ?question_kind rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Costco") .}
+ UNION
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf ?question_kind .
+  ?question_kind rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Walgreens") .}
+}
+
+
+
+

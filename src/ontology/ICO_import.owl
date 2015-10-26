@@ -1120,13 +1120,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000005"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000007"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: provenance: a term a plan was proposed for OBI (OBI_0000344) , edited by the PlanAndPlannedProcess branch. Original definition was &quot; a plan is a specification of a process that is realized by an actor to achieve the objective specified as part of the plan&quot;. It has been subsequently moved to IAO where the objective for which the original term was defined was satisfied with the definitionof this, different, term.</obo:IAO_0000116>
@@ -1250,14 +1250,14 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000030"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000310"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:ICO_0000093 xml:lang="en">11609</obo:ICO_0000093>
@@ -1287,10 +1287,10 @@
         </rdfs:subClassOf>
         <obo:IAO_0000119>NCIt C16468</obo:IAO_0000119>
         <obo:IAO_0000117>AK, FM, YH, YL, MH, EE</obo:IAO_0000117>
-        <obo:ICO_0000092 xml:lang="en">C16468 </obo:ICO_0000092>
         <obo:IAO_0000116>The term definition is adapted from NCIt definition of &apos;consent form&apos; (C16468) with modification. Compared to the NCIt definition, the ICO definition does not restrict the form to a clinical trial.  </obo:IAO_0000116>
         <obo:IAO_0000115 xml:lang="en">A document that explains all relevant study information to assist a human subject in understanding the expectations and requirements of participation in a research study. This form document is presented to and signed by the study subject. </obo:IAO_0000115>
         <obo:ICO_0000091 xml:lang="en">C0009797 </obo:ICO_0000091>
+        <obo:ICO_0000092 xml:lang="en">C16468 </obo:ICO_0000092>
         <obo:IAO_0000412 rdf:resource="&obo;ico.owl"/>
     </owl:Class>
     
@@ -1760,24 +1760,6 @@
         <obo:IAO_0000117>YL, YH</obo:IAO_0000117>
         <rdfs:comment>This question is needed for oral typhoid vaccination</rdfs:comment>
         <obo:IAO_0000115>a question textual entity that asks whether the questionee is currently taking some antibiotics</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;ico.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ICO_0000162 -->
-
-    <owl:Class rdf:about="&obo;ICO_0000162">
-        <rdfs:label xml:lang="en">question on thrombocytopenia history</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ICO_0000141"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000064"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000117>YL, YH</obo:IAO_0000117>
-        <obo:IAO_0000115>a question textual entity that asks whether the questionee has a history of thrombocytopenia</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;ico.owl"/>
     </owl:Class>
     
@@ -2306,7 +2288,6 @@
 
     <owl:Class rdf:about="&obo;ICO_0000197">
         <rdfs:label xml:lang="en">question on history of thrombocytopenia or thrombocytopenic purpura</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ICO_0000160"/>
         <obo:IAO_0000112>Walgreens immunization informed consent: https://www.walgreens.com/images/pdfs/IN-2225/WAG_VAR_Form_EDIT_10172013_v1.pdf</obo:IAO_0000112>
         <dc:creator xml:lang="en">YL,YH</dc:creator>
         <obo:IAO_0000115 xml:lang="en">a question textual entity that asks whether the questionee has a history of thrombocytopenia or thrombocytopenic purpura.</obo:IAO_0000115>
@@ -2425,17 +2406,6 @@
                 <owl:someValuesFrom>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
                         <owl:someValuesFrom>
                             <owl:Class>
                                 <owl:intersectionOf rdf:parseType="Collection">
@@ -2447,6 +2417,17 @@
                                 </owl:intersectionOf>
                             </owl:Class>
                         </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
@@ -2474,20 +2455,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000144"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2504,6 +2473,18 @@
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="&xsd;string"></obo:IAO_0000118>
@@ -2741,13 +2722,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000087"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;ICO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2763,8 +2739,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;ICO_0000001"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000087"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000202"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">09/28/2009 Alan Ruttenberg: This is made a subclass of the higher level processual entity in BFO because I don&apos;t want to take a stand on whether it is a process aggregate. Analogous to the situation with Material entity.</obo:IAO_0000116>
