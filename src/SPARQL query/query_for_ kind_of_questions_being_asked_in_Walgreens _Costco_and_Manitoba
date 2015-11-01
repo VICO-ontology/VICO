@@ -1,0 +1,45 @@
+===  Search what kind of questions being asked in Walgreens, Costco, and Manitoba 
+=== search can be successfully carried out in Protege 5.0.0 beta-15; error with Ontobee SPARQL endpoint has reported to Github VICO issue tracker
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT distinct ?label ?label1
+
+WHERE
+{
+
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf* ?question_kind .
+  ?question_kind rdfs:subClassOf obo:ICO_0000141 .
+  ?question_kind rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Costco") .}
+ UNION
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf* ?question_kind .
+  ?question_kind rdfs:subClassOf obo:ICO_0000141 .
+  ?question_kind rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Walgreens") .}
+ UNION
+  {?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf* ?question_kind .
+  ?question_kind rdfs:subClassOf obo:ICO_0000141 .
+  ?question_kind rdfs:label ?label .
+  FILTER REGEX(str(?label1), "Manitoba") .}
+}
+
+
