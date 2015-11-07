@@ -2,12 +2,12 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ico.owl" uri="vico-instances.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="http://purl.obolibrary.org/obo/vico.owl" uri="vico.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="http://purl.obolibrary.org/obo/vico/ICO_import.owl." uri="ICO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="http://purl.obolibrary.org/obo/vico/RO_import.owl." uri="RO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="http://purl.obolibrary.org/obo/vico/VO_import.owl" uri="VO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged%20.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1445848120676" name="http://purl.obolibrary.org/obo/vicodemo.owl" uri="vicodemo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="http://purl.obolibrary.org/obo/vico.owl" uri="vico.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="http://purl.obolibrary.org/obo/vico/ICO_import.owl." uri="ICO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="http://purl.obolibrary.org/obo/vico/RO_import.owl." uri="RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="http://purl.obolibrary.org/obo/vico/VO_import.owl" uri="VO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged%20.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1446928861419" name="http://purl.obolibrary.org/obo/vicodemo.owl" uri="vicodemo.owl"/>
     </group>
 </catalog>
