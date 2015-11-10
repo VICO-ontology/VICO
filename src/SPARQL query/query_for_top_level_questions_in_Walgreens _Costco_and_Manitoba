@@ -1,5 +1,5 @@
-===  Search what kind of questions being asked in Walgreens, Costco, and Manitoba 
-=== search can be successfully carried out in Protege 5.0.0 beta-15; error with Ontobee SPARQL endpoint has reported to Github VICO issue tracker
+===  Search top level questions being asked in Walgreens, Costco, and Manitoba 
+=== search can be successfully carried out in Protege 5.0.0 beta-15; error with Ontobee SPARQL endpoint has been reported to Github VICO issue tracker
 
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -9,7 +9,7 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 
-SELECT distinct ?label ?label1
+SELECT distinct ?label ?label1 (count(?label1) as ?label_count)
 
 WHERE
 {
@@ -41,5 +41,6 @@ WHERE
   ?question_kind rdfs:label ?label .
   FILTER REGEX(str(?label1), "Manitoba") .}
 }
-
+Group By ?label ?label1
+Order By  ?label DESC(?label_count) 
 

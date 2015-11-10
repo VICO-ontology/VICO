@@ -1,0 +1,27 @@
+== query different questions in Walgreen and Costco
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+PREFIX documented_by: <http://purl.obolibrary.org/obo/VICO_0000025>
+
+SELECT ?question ?organization
+WHERE {
+  ?questionnaire rdfs:subClassOf questionnaire: .
+  ?questionnaire rdfs:subClassOf ?questionnaire_org .
+  ?questionnaire_org owl:onProperty documented_by:; owl:hasValue ?organization .
+  ?questionnaire rdfs:subClassOf ?questionnaire_ques .
+  ?questionnaire_ques  owl:onProperty has_component:; owl:someValuesFrom ?question .
+      { SELECT DISTINCT ?question
+    WHERE {    ?questionnaire1 rdfs:subClassOf questionnaire: .
+        ?questionnaire1 rdfs:subClassOf ?questionnaire1_org .
+          ?questionnaire1_org owl:onProperty documented_by:; owl:hasValue ?organization1 .
+          ?questionnaire1 rdfs:subClassOf ?questionnaire1_ques .
+          ?questionnaire1_ques  owl:onProperty has_component:; owl:someValuesFrom ?question .
+          ?organization1 rdfs:label ?orgLabel1 .
+          FILTER (str(?orgLabel1)="Costco" || str(?orgLabel1)= "Walgreens") . }
+        group by ?question
+        having (count(distinct ?organization1) = 1) }
+}
