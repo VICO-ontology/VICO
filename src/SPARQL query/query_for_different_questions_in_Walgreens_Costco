@@ -11,17 +11,19 @@ SELECT ?question ?organization
 WHERE {
   ?questionnaire rdfs:subClassOf questionnaire: .
   ?questionnaire rdfs:subClassOf ?questionnaire_org .
-  ?questionnaire_org owl:onProperty documented_by:; owl:hasValue ?organization .
+  ?questionnaire_org owl:onProperty documented_by:; owl:hasValue ?organization_id .
   ?questionnaire rdfs:subClassOf ?questionnaire_ques .
-  ?questionnaire_ques  owl:onProperty has_component:; owl:someValuesFrom ?question .
-      { SELECT DISTINCT ?question
+  ?questionnaire_ques  owl:onProperty has_component:; owl:someValuesFrom ?question_id .
+      { SELECT DISTINCT ?question_id
     WHERE {    ?questionnaire1 rdfs:subClassOf questionnaire: .
         ?questionnaire1 rdfs:subClassOf ?questionnaire1_org .
           ?questionnaire1_org owl:onProperty documented_by:; owl:hasValue ?organization1 .
           ?questionnaire1 rdfs:subClassOf ?questionnaire1_ques .
-          ?questionnaire1_ques  owl:onProperty has_component:; owl:someValuesFrom ?question .
+          ?questionnaire1_ques  owl:onProperty has_component:; owl:someValuesFrom ?question_id .
           ?organization1 rdfs:label ?orgLabel1 .
           FILTER (str(?orgLabel1)="Costco" || str(?orgLabel1)= "Walgreens") . }
-        group by ?question
+        group by ?question_id
         having (count(distinct ?organization1) = 1) }
+	?question_id rdfs:label ?question .
+	?organization_id rdfs:label ?organization .
 }
