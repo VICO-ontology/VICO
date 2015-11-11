@@ -1,0 +1,34 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/vico/DOID_import.owl
+
+[Source ontology]
+DOID
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/DOID_2841 #asthma
+http://purl.obolibrary.org/obo/DOID_13250 #diarrhea
+http://purl.obolibrary.org/obo/DOID_162 #cancer
+http://purl.obolibrary.org/obo/DOID_1240 #leukemia
+http://purl.obolibrary.org/obo/DOID_635 #AIDS
+http://purl.obolibrary.org/obo/DOID_2355 #anemia
+http://purl.obolibrary.org/obo/DOID_114 #heart disease
+http://purl.obolibrary.org/obo/DOID_850 #lung disease
+http://purl.obolibrary.org/obo/DOID_557 #kidney disease
+http://purl.obolibrary.org/obo/DOID_1588 #thrombocytopenia
+http://purl.obolibrary.org/obo/DOID_9351 #diabetes mellitus
+http://purl.obolibrary.org/obo/DOID_3275 #thymoma
+http://purl.obolibrary.org/obo/DOID_4 #disease
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/DOID_4 #disease
+
+http://purl.obolibrary.org/obo/DOID_4 #disease
+subClassOf http://purl.obolibrary.org/obo/BFO_0000016
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
