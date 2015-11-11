@@ -27,3 +27,4 @@ WHERE {
 	?question_id rdfs:label ?question .
 	?organization_id rdfs:label ?organization .
 }
+ORDER BY ?organization

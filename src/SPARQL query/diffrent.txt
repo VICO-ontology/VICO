@@ -1,0 +1,15 @@
+question	organization
+cortisone treatment question	Costco
+immunocompromisation question	Costco
+question on long-term heart disease	Costco
+question on reaction after immunization	Costco
+question whether currently sick	Costco
+question on current antibiotics usage	Walgreens
+question on current aspirin therapy	Walgreens
+question on high-dose steroid therapy for longer than 2 weeks	Walgreens
+question on history of thrombocytopenia or thrombocytopenic purpura	Walgreens
+question on serious nasal condition	Walgreens
+question on skin test in past 4 weeks	Walgreens
+question on thymus disease	Walgreens
+question on whether fainted or felt dizzy after immunization	Walgreens
+question whether currently sick with a moderate to high fever, vomiting/diarrhea	Walgreens

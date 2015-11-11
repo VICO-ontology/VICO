@@ -1,4 +1,4 @@
-== query for selecting vaccines contain egg allergen ==
+== query for selecting vaccines contain egg allergen from VO ontology==
 
 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
@@ -6,7 +6,7 @@ PREFIX has_vaccine_allergen: <http://purl.obolibrary.org/obo/VO_0000531>
 PREFIX chicken_egg_protein_allergen: <http://purl.obolibrary.org/obo/VO_0000912>
 
 SELECT distinct ?vaccine ?VO_ID
-FROM <http://purl.obolibrary.org/obo/merged/VICO>
+FROM <http://purl.obolibrary.org/obo/merged/VO>
 WHERE {
         ?VO_ID rdfs:label ?vaccine .
 		?VO_ID rdfs:subClassOf ?VO_parent .

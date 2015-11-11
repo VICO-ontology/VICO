@@ -40,6 +40,7 @@ PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 
 SELECT distinct ?question ?label
+From <http://purl.obolibrary.org/obo/merged/VICO>
 WHERE
 {
 
@@ -57,11 +58,10 @@ WHERE
 
 }
 
-13 Results:  (run on http://sparql.hegroup.org/sparql/ at 8:29pm CDT 05/05/2015)
+12 Results:  (run on http://sparql.hegroup.org/sparql/ at 1:17pm EST 11/11/2015)
 question 	label
 http://purl.obolibrary.org/obo/ICO_0000146 	question whether allergic to egg
 http://purl.obolibrary.org/obo/ICO_0000156 	question on vaccination in past 4 weeks
-http://purl.obolibrary.org/obo/ICO_0000142 	question whether currently sick
 http://purl.obolibrary.org/obo/ICO_0000152 	question on woman pregnancy
 http://purl.obolibrary.org/obo/ICO_0000168 	question on cancer
 http://purl.obolibrary.org/obo/ICO_0000169 	question on leukemia

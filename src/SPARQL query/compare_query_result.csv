@@ -1,25 +1,27 @@
 question,Walgreens / Costco
-question on vaccination in past 4 weeks,Walgreens; Costco
-question on blood transfusion in past year,Walgreens; Costco
-question whether allergic to vaccine,Walgreens; Costco
 question on asthma or wheezing history,Walgreens; Costco
-question on leukemia,Walgreens; Costco
-question whether allergic to medication,Walgreens; Costco
-seizure disorder question,Walgreens; Costco
+question on blood transfusion in past year,Walgreens; Costco
 question on cancer,Walgreens; Costco
-question whether currently sick,Walgreens; Costco
-X-ray treatment question,Walgreens; Costco
-question whether allergic to latex,Walgreens; Costco
+question on leukemia,Walgreens; Costco
+question on vaccination in past 4 weeks,Walgreens; Costco
 question on woman pregnancy,Walgreens; Costco
 question whether allergic to egg,Walgreens; Costco
-question on long-term heart disease,Costco
-cortisone treatment question,Costco
-immunocompromisation question,Costco
+question whether allergic to latex,Walgreens; Costco
+question whether allergic to medication,Walgreens; Costco
+question whether allergic to vaccine,Walgreens; Costco
+seizure disorder question,Walgreens; Costco
+X-ray treatment question,Walgreens; Costco
+question whether currently sick,Costco
 question on reaction after immunization,Costco
-question on whether fainted or felt dizzy after immunization ,Walgreens
+immunocompromisation question,Costco
+cortisone treatment question,Costco
+question on long-term heart disease,Costco
 question on skin test in past 4 weeks,Walgreens
-question on serious nasal condition,Walgreens
 question on high-dose steroid therapy for longer than 2 weeks,Walgreens
 question on thymus disease,Walgreens
-question on current aspirin therapy,Walgreens
 question on current antibiotics usage,Walgreens
+question on current aspirin therapy,Walgreens
+question on serious nasal condition,Walgreens
+question on whether fainted or felt dizzy after immunization,Walgreens
+"question whether currently sick with a moderate to high fever, vomiting/diarrhea",Walgreens
+question on history of thrombocytopenia or thrombocytopenic purpura,Walgreens
