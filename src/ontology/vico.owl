@@ -27,9 +27,9 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;vico.owl">
         <dc:creator>Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
-        <dc:date xml:lang="en">2015-11-07</dc:date>
+        <dc:date xml:lang="en">2015-11-11</dc:date>
         <dc:creator>Jie Zheng</dc:creator>
-        <owl:versionInfo xml:lang="en">Arbor version; 1.0.11</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Arbor version; 1.0.38</owl:versionInfo>
         <dc:description>The vaccination informed consent Ontology (VICO) is an ontology in the domain of vaccination/immunization informed consent.</dc:description>
         <dc:creator>Asiyah Yu Lin</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
