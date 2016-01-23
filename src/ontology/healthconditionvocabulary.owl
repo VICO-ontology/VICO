@@ -1,0 +1,135 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY doid "http://purl.obolibrary.org/obo/doid#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;vico/healthconditionvocabulary.owl#"
+     xml:base="&obo;vico/healthconditionvocabulary.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:doid="&obo;doid#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="&obo;vico/healthconditionvocabulary.owl">
+        <rdfs:comment>This is a modular ontology of all kinds of health condition that is used for VICO. It covers all the health conditions that is necessary for asserting vaccine recieptient&apos;s controindication and precautions for administering vaccine. It imports some ontologies, such DOID, SYMP.</rdfs:comment>
+        <oboInOwl:created_by>YL</oboInOwl:created_by>
+        <owl:imports rdf:resource="&obo;vico/DOID_import.owl"/>
+        <owl:imports rdf:resource="&obo;vico/SYMP_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100000 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100000">
+        <rdfs:label xml:lang="en">sickness</rdfs:label>
+        <oboInOwl:hasDbXref>NCI:C107499</oboInOwl:hasDbXref>
+        <doid:NCIthesaurus>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C107499</doid:NCIthesaurus>
+        <oboInOwl:created_by>YL</oboInOwl:created_by>
+        <oboInOwl:creation_date>01/17/2016</oboInOwl:creation_date>
+        <obo:IAO_0000115 xml:lang="en">A disposition of ill health, bodily malfunction, or discomfort.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100001 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100001">
+        <rdfs:label xml:lang="en">immunocompromised condition</rdfs:label>
+        <oboInOwl:creation_date xml:lang="en">01/17/2016</oboInOwl:creation_date>
+        <obo:IAO_0000115 xml:lang="en">A condition or state in which the immune system doesn&apos;t have ability to fight infectious disease or medical challenges.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">A person who has an immunodeficiency of any kind is said to be immunocompromised. An immunocompromised person may be particularly vulnerable to opportunistic infections, in addition to normal infections that could affect everyone.
+Immunodeficiency may also decrease cancer immunosurveillance. Most cases of immunodeficiency are acquired (&quot;secondary&quot;) but some people are born with defects in their immune system, or primary immunodeficiency. Transplant patients take medications to suppress their immune system as an anti-rejection measure, as do some patients suffering from an over-active immune system.</rdfs:comment>
+        <oboInOwl:created_by xml:lang="en">YL</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100002 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100002">
+        <rdfs:label xml:lang="en">functional asplenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0100004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100003 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100003">
+        <rdfs:label xml:lang="en">anatomical asplenia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0100004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100004 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100004">
+        <rdfs:label xml:lang="en">asplenia</rdfs:label>
+        <oboInOwl:creation_date xml:lang="en">01/17/2016</oboInOwl:creation_date>
+        <obo:IAO_0000115 xml:lang="en">Asplenia refers to the absence of normal spleen function and is associated with some serious infection risks.</obo:IAO_0000115>
+        <oboInOwl:created_by xml:lang="en">YL</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100005 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100005">
+        <rdfs:label xml:lang="en">acquired immunocompromised condition due to transplant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VICO_0100001"/>
+        <oboInOwl:creation_date xml:lang="en">01/17/2016</oboInOwl:creation_date>
+        <obo:IAO_0000115 xml:lang="en">The immunocomproised condition accquired by transplant patients taking medications to suppress their immune system as an anti-rejection measure.</obo:IAO_0000115>
+        <oboInOwl:created_by xml:lang="en">YL</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100006 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100006">
+        <rdfs:label xml:lang="en">cerebrospinal fluid leak</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A health condition where the fluid surrounding the brain and spinal cord escapes.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym xml:lang="en">CSF leak</oboInOwl:hasExactSynonym>
+        <rdfs:comment xml:lang="en">http://www.adultvaccination.org/professional-resources/pneumo/adult-pneumo-guide-hcp.pdf</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100007 -->
+
+    <owl:Class rdf:about="&obo;VICO_0100007">
+        <rdfs:label xml:lang="en">cochlear implanted</rdfs:label>
+        <rdfs:comment xml:lang="en">The United States Food and Drug Administration reports that cochlear implant recipients may be at higher risk for meningitis.[76] A study of 4,265 American children who received implants between 1997 and 2002 concluded that recipient children had a risk of pneumococcal meningitis more than 30 times greater than that for children in the general population.[77] A later, UK-based, study found that while the incidence of meningitis in implanted adults was significantly higher than the general population, the incidence in children was no different from the general population.[78] As a result, the Centers for Disease Control and Prevention and the Food and Drug Administration both recommend that would-be implant recipients be vaccinated against meningitis prior to surgery.[79]</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">a condition of person who has been surgically implanted an electronic device under the skin behind the ear to provide hearing.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">http://www.adultvaccination.org/professional-resources/pneumo/adult-pneumo-guide-hcp.pdf</rdfs:comment>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,26 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/vico/SYMP_import.owl
+
+[Source ontology]
+SYMP
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/SYMP_0000613 #fever
+http://purl.obolibrary.org/obo/SYMP_0000882 #high fever
+http://purl.obolibrary.org/obo/SYMP_0000879 #low-grade fever
+http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/SYMP_0000613 #fever
+subClassOf http://purl.obolibrary.org/obo/VICO_0100000 # sickness
+
+http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
+subClassOf http://purl.obolibrary.org/obo/VICO_0100000 # sickness
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]

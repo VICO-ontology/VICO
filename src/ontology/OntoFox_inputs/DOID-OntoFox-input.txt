@@ -21,9 +21,7 @@ http://purl.obolibrary.org/obo/DOID_4 #disease
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease
-
-http://purl.obolibrary.org/obo/DOID_4 #disease
-subClassOf http://purl.obolibrary.org/obo/BFO_0000016
+subClassOf http://purl.obolibrary.org/obo/VICO_0100000 # sickness
 
 [Source term retrieval setting]
 includeNoIntermediates
