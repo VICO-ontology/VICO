@@ -22,6 +22,11 @@ http://purl.obolibrary.org/obo/DOID_1205 #allergy
 http://purl.obolibrary.org/obo/DOID_3044 #food allergy
 http://purl.obolibrary.org/obo/DOID_4377 #egg allergy
 http://purl.obolibrary.org/obo/DOID_12842 #Guillain-Barre syndrome
+http://purl.obolibrary.org/obo/DOID_3083 #COPD
+http://purl.obolibrary.org/obo/DOID_7147 #ankylosing spondylitis
+http://purl.obolibrary.org/obo/DOID_8778 #Crohn’s disease
+http://purl.obolibrary.org/obo/DOID_7148 #rheumatoid arthritis
+http://purl.obolibrary.org/obo/DOID_409 #liver disease
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease
