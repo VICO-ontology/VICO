@@ -9,6 +9,7 @@ http://purl.obolibrary.org/obo/SYMP_0000613 #fever
 http://purl.obolibrary.org/obo/SYMP_0000882 #high fever
 http://purl.obolibrary.org/obo/SYMP_0000879 #low-grade fever
 http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
+http://purl.obolibrary.org/obo/SYMP_0000124 #seizure
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/SYMP_0000613 #fever

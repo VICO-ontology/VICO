@@ -18,6 +18,10 @@ http://purl.obolibrary.org/obo/DOID_1588 #thrombocytopenia
 http://purl.obolibrary.org/obo/DOID_9351 #diabetes mellitus
 http://purl.obolibrary.org/obo/DOID_3275 #thymoma
 http://purl.obolibrary.org/obo/DOID_4 #disease
+http://purl.obolibrary.org/obo/DOID_1205 #allergy
+http://purl.obolibrary.org/obo/DOID_3044 #food allergy
+http://purl.obolibrary.org/obo/DOID_4377 #egg allergy
+http://purl.obolibrary.org/obo/DOID_12842 #Guillain-Barre syndrome
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease

@@ -127,6 +127,8 @@ http://purl.obolibrary.org/obo/VO_0010748 # ViVaxim
 http://purl.obolibrary.org/obo/VO_0010749 # Vivotif (Canada)
 http://purl.obolibrary.org/obo/VO_0000299 # company
 http://purl.obolibrary.org/obo/VO_0000001 # vaccine
+http://purl.obolibrary.org/obo/VO_0000544 # human vaccinee
+http://purl.obolibrary.org/obo/VO_0003020 # intranasal vaccination
 
 
 [Top level source term URIs and target direct superclass URIs]
@@ -141,6 +143,9 @@ subClassOf http://purl.obolibrary.org/obo/VO_0000661
 
 http://purl.obolibrary.org/obo/VO_0000661
 subClassOf http://purl.obolibrary.org/obo/VO_0000001
+
+http://purl.obolibrary.org/obo/VO_0000544 # human vaccinee
+subClassOf http://purl.obolibrary.org/obo/NCBITaxon_9606
 
 [Source term retrieval setting]
 includeNoIntermediates
