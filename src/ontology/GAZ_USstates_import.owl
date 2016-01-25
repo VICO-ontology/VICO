@@ -1,0 +1,1557 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;vico/GAZ_USstates_import.owl#"
+     xml:base="&obo;vico/GAZ_USstates_import.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="&obo;vico/GAZ_USstates_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
+        <rdfs:label>example of usage</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label rdf:datatype="&xsd;string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <rdfs:label>editor note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label>alternative term</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;RO_0001900">
+        <rdfs:label>temporal interpretation</rdfs:label>
+        <obo:IAO_0000115>An assertion that holds between an OWL Object Property and a temporal interpretation that elucidates how OWL Class Axioms that use this property are to be interpreted in a temporal context.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
+        <rdfs:label rdf:datatype="&xsd;string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref">
+        <rdfs:label rdf:datatype="&xsd;string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym">
+        <rdfs:label rdf:datatype="&xsd;string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace">
+        <rdfs:label rdf:datatype="&xsd;string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#shorthand -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;shorthand">
+        <rdfs:label rdf:datatype="&xsd;string">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0001025">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label rdf:datatype="&xsd;string">located_in</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">located_in (type level)</rdfs:label>
+        <rdfs:label xml:lang="en">located in</rdfs:label>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">RO:0001025</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">file:/Users/michaelashburner/Desktop/gaz/gaz.obo</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">located_in</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">located_in</oboInOwl:shorthand>
+        <dc:source>http://www.obofoundry.org/ro/#OBO_REL:located_in</dc:source>
+        <obo:IAO_0000116 xml:lang="en">Location as a relation between instances: The primitive instance-level relation c located_in r at t reflects the fact that each continuant is at any given time associated with exactly one spatial region, namely its exact location. Following we can use this relation to define a further instance-level location relation - not between a continuant and the region which it exactly occupies, but rather between one continuant and another. c is located in c1, in this sense, whenever the spatial region occupied by c is part_of the spatial region occupied by c1.    Note that this relation comprehends both the relation of exact location between one continuant and another which obtains when r and r1 are identical (for example, when a portion of fluid exactly fills a cavity), as well as those sorts of inexact location relations which obtain, for example, between brain and head or between ovum and uterus</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">Most location relations will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">a relation between two independent continuants, the target and the location, in which the target is entirely within the location</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">located in</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">located_in</obo:IAO_0000118>
+        <obo:IAO_0000112 xml:lang="en">my brain is located in my head</obo:IAO_0000112>
+        <obo:IAO_0000112 xml:lang="en">this rat is located in this cage</obo:IAO_0000112>
+        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&rdfs;subClassOf"/>
+            <rdf:Description rdf:about="&obo;RO_0001025"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="&obo;RO_0001025"/>
+            <rdf:Description rdf:about="&rdfs;subClassOf"/>
+        </owl:propertyChainAxiom>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#subClassOf -->
+
+    <owl:ObjectProperty rdf:about="&rdfs;subClassOf">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000029 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000029"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00000448">
+        <rdfs:label rdf:datatype="&xsd;string">geographic location</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000029"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reference to a place on the Earth, by its name or by its geographical location.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00000448</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GAZ:00000467</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">geographic region {alternative name}</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002459 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00002459">
+        <rdfs:label rdf:datatype="&xsd;string">United States of America</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00000448"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A federal constitutional republic comprising fifty states and a federal district. The country is situated mostly in central North America, where its forty-eight contiguous states and Washington, DC, the capital district, lie between the Pacific and Atlantic Oceans, bordered by Canada to the north and Mexico to the south. The State of Alaska is in the northwest of the continent, with Canada to its east and Russia to the west across the Bering Strait, and the State of Hawaii is in the mid-Pacific. The United States also possesses several territories, or insular areas, that are scattered around the Caribbean and Pacific. The states are divided into smaller administrative regions, called counties in most states, exceptions being Alaska (parts of the state are organized into subdivisions called boroughs; the rest of the state&apos;s territory that is not included in any borough is divided into &quot;census areas&quot;), and Louisiana (which is divided into county-equivalents that are called parishes). There are also independent cities which are within particular states but not part of any particular county or consolidated city-counties. Another type of organization is where the city and county are unified and function as an independent city. There are thirty-nine independent cities in Virginia and other independent cities or city-counties are San Francisco, California, Baltimore, Maryland, St. Louis, Missouri, Denver, Colorado and Carson City, Nevada. Counties can include a number of cities, towns, villages, or hamlets, or sometimes just a part of a city. Counties have varying degrees of political and legal significance, but they are always administrative divisions of the state. Counties in many states are further subdivided into townships, which, by definition, are administrative divisions of a county. In some states, such as Michigan, a township can file a charter with the state government, making itself into a &quot;charter township&quot;, which is a type of mixed municipal and township status (giving the township some of the rights of a city without all of the responsibilities), much in the way a metropolitan municipality is a mixed municipality and county.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002459</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:840</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:USA</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">U.S.A</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">USA</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003706 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00003706">
+        <rdfs:label rdf:datatype="&xsd;string">Territory of Guam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An unincorporated territory of the United States.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003706</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01802705</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">GU</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:66</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:316</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:GU</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:GUM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-GU</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">lat_lon: 13deg27minN, 144deg47minE.</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003956 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00003956">
+        <rdfs:label rdf:datatype="&xsd;string">Unincorporated Territory (USA)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00000448"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An area of the United States of America under United States jurisdiction, to which Congress has determined that only select parts of the United States of America Constitution apply.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003956</oboInOwl:id>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003957 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00003957">
+        <rdfs:label rdf:datatype="&xsd;string">American Samoa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AS</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An unincorporated territory of the United States located in the South Pacific Ocean, southeast of the sovereign State of Samoa. The main (largest and most populous) island is Tutuila, with the Manu&apos;a Islands, Rose Atoll, and Swains Island also included in the territory.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003957</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01802701</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:60</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:AS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:ASM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:AS</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-AS</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003959 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00003959">
+        <rdfs:label rdf:datatype="&xsd;string">United States Virgin Islands</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A group of islands in the Caribbean that are an insular area of the United States. The islands are geographically part of the Virgin Islands archipelago and are located in the Leeward Islands of the Lesser Antilles. The US Virgin Islands are an organized, unincorporated United States territory. The US Virgin Islands are administratively divided into two districts and subdivided into 20 sub-districts.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003959</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01802710</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:78</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:850</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:VI</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:VIR</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-VI</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">US Virgin Islands</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">VI</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006470 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00006470">
+        <rdfs:label rdf:datatype="&xsd;string">Republic of the Marshall Islands</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A Micronesian island nation in the western Pacific Ocean, located north of Nauru and Kiribati, east of the Federated States of Micronesia and south of the United States territory of Wake Island, to which it lays claim.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00006470</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:584</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:MH</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:MHL</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:MH</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006935 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00006935">
+        <rdfs:label rdf:datatype="&xsd;string">Commonwealth of Puerto Rico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A semi-autonomous territory composed of an archipelago in the northeastern Caribbean, east of the Dominican Republic and west of the Virgin Islands, approximately 2,000 km off the coast of Florida (the nearest of the mainland United States).</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Estado Libre Asociado de Puerto Rico</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00006935</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779808</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:72</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:630</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:PR</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:PRI</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-PR</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007109 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00007109">
+        <rdfs:label rdf:datatype="&xsd;string">Northern Marianas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A commonwealth in political union with the United States.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Commonwealth of the Northern Mariana Islands</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00007109</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779809</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:69</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:580</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:MNP</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:MP</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MP</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MP</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Sankattan Siha Na Islas Marianas</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007110 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00007110">
+        <rdfs:label rdf:datatype="&xsd;string">Territory of Wake Island</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An unorganized, unincorporated territory of the United States, administered by the Office of Insular Affairs, US Department of the Interior.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00007110</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:UM-79</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007113 -->
+
+    <owl:Class rdf:about="&obo;GAZ_00007113">
+        <rdfs:label rdf:datatype="&xsd;string">United States Minor Outlying Islands</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GAZ_00003956"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A statistical designation defined by ISO3166-1, consists of nine insular United States possessions. Palmyra Atoll is the only incorporated territory of the United States. Currently, none of the islands have any permanent residents.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00007113</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01878752</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:74</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:581</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:UM</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-1:UMI</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-UM</oboInOwl:hasDbXref>
+        <obo:IAO_0000412 rdf:resource="&obo;gaz.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000448 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00000448"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00000458 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00000458"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002459 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002459"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002461 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002461">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of California</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state on the West Coast of the United States, along the Pacific Ocean. It is bordered by Oregon to the north, Nevada to the east, Arizona to the southeast, and to the south the Mexican state of Baja California.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Califor-nia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">California</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002461</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779778</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:06</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-CA</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003174"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002480 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002480">
+        <rdfs:label rdf:datatype="&xsd;string">Hawaiian Islands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002514 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002514">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of New York</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002514</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:36</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NY</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NY</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003097"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002515 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002515">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Oregon</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Pacific Northwest region of the United States. Oregon is located on the Pacific coast between Washington to the north, California to the south, Nevada on the southeast and Idaho to the east. The Columbia and Snake rivers delineate much of Oregon&apos;s northern and eastern boundaries respectively.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002515</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:41</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-OR</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">OR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Oregon</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003174"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002518 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002518">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Arizona</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southwestern region of the United States. It borders New Mexico, Utah, Nevada, California, touches Colorado, and has a 626 km international border with the States of Sonora and Baja California in Mexico.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AZ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002518</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779777</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:04</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-AZ</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002519 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002519">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Maryland</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Mid Atlantic region of the United States, bordering Virginia, West Virginia and the District of Columbia to the south and west, Pennsylvania to the north, and Delaware to the east.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002519</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01714934</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:24</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MD</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MD</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003097"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002520 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002520">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of North Carolina</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located on the Atlantic Seaboard in the southeastern United States. The state borders South Carolina and Georgia to the south, Tennessee to the west and Virginia to the north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002520</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01027616</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:37</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NC</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">North Carolina</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002521 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002521">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Alaska</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the United States of America, in the extreme northwest portion of the North American continent. The state is bordered by Yukon Territory and British Columbia, Canada to the east, the Gulf of Alaska and the Pacific Ocean to the south, the Bering Sea, Bering Strait, and Chukchi Sea to the west, and the Beaufort Sea and the Arctic Ocean.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AK</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002521</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01785533</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:02</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-AK</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00000458"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00002459"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002524 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002524">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of South Carolina</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the southern region (Deep South) of the United States. It borders Georgia to the south and North Carolina to the north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002524</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779799</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:45</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-SC</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">SC</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">South Carolina</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002531 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002531">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Rhode Island</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the New England region of the United States. By land Rhode Island borders Connecticut to the west and Massachusetts to the north and east. Rhode Island also shares a water border with New York to the southwest.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002531</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01219835</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:44</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-RI</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">RI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">State of Rhode Island and Providence Plantations</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002533 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002533">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Wyoming</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the northwestern region of the United States. Wyoming is bordered on the north by Montana, on the east by South Dakota and Nebraska, on the south by Colorado, on the southwest by Utah, and on the west by Idaho.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002533</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779807</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:56</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-WY</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">WY</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002537 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002537">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">Commonwealth of Massachusetts</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the New England region of the northeastern United States. It borders Rhode Island and Connecticut to the south, New York to the west, and Vermont and New Hampshire to the north. To the east, it borders the Atlantic Ocean.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002537</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MA</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MA</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002539 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002539">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Minnesota</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Midwestern region of the United States. The state shares a Lake Superior water border with Michigan and Wisconsin on the northeast; the remainder of the eastern border is with Wisconsin. Iowa is to the south, North Dakota and South Dakota to the west, and the Canadian provinces of Ontario and Manitoba to the north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002539</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00662849</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:27</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MN</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MN</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002542 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002542">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">Commonwealth of Pennsylvania</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Northeastern and Middle Atlantic regions of the United States. The state borders Delaware and Maryland to the south, West Virginia to the southwest, Ohio to the west, New York and Canada to the north, and New Jersey to the east.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002542</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779798</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:42</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-PA</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">PA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Pennsylvania</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">State of Pennsylvania</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003097"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002546 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002546">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Oklahoma</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the South Central region and Southern Region of the United States of America. It is bounded on the east by Arkansas and Missouri, on the north by Kansas, on the northwest by Colorado, on the far west by New Mexico, and on the south and near-west by Texas.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002546</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01102857</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:40</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-OK</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">OK</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003779"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002553 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002553">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Washington</rdfs:label>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002553</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779804</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:53</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-WA</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The Northwestern-most state of the contiguous United States. Its northern border lies mostly along the 49th parallel, and then via marine boundaries through the Strait of Georgia, Haro Strait and Strait of Juan de Fuca, with the Canadian province of British Columbia to the north. Washington borders Oregon to the south, with the Columbia River forming most of the boundary and the 46th parallel forming the eastern part of the southern boundary. To the east Washington borders Idaho, bounded mostly by the meridian running north from the confluence of the Snake River and Clearwater River, except for the southernmost section where the border follows the Snake River. To the west of Washington lies the Pacific Ocean.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">WA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Washington</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003174"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002557 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002557">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of New Jersey</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Mid-Atlantic and Northeastern regions of the United States. It is bordered on the north by New York, on the east by the Atlantic Ocean, on the southwest by Delaware, and on the west by Pennsylvania. New Jersey lies within the sprawling metropolitan areas of New York and Philadelphia.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002557</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779795</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:34</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NJ</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NJ</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003097"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002580 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002580">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Texas</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the South Central United States. The Rio Grande, Red River and Sabine River form natural state borders, Oklahoma on the north, Louisiana and Arkansas on the east, and the Mexican states of Chihuahua, Coahuila, Nuevo Leon, and Tamaulipas to the south.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002580</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779801</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:48</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-TX</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">TX</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003779"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002586 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002586">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Wisconsin</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A State located in the north-central part of the United States. Wisconsin is bordered by the Montreal River; Lake Superior and Michigan to the north; by Lake Michigan to the east; by Illinois to the south; and by Iowa and Minnesota to the west. The state&apos;s boundaries include the Mississippi River and Saint Croix River in the west, and the Menominee River in the northeast Wisconsin&apos;s capital is Madison, and its largest city is Milwaukee.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002586</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779806</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:55</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-WI</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">WI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Wisconsin</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002591 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002591">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Connecticut</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the New England region of the northeastern United States of America. The state borders New York to the west and south (Long Island by sea), Massachusetts to the north, and Rhode Island to the east. Portions of southwestern Connecticut are considered part of the New York metropolitan area.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CT</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002591</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779780</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:09</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-CT</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002602 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002602">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Maine</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the New England region of the northeastern United States of America, bordering the Atlantic Ocean to the southeast, New Hampshire to the southwest, the Canadian provinces of Quebec to the northwest and New Brunswick to the northeast.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002602</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779787</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:23</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-ME</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ME</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Main</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002606 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002606">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Montana</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Western United States. To the north, Montana and Canada share a 877 km border. The state borders the Canadian provinces of British Columbia, Alberta, and Saskatchewan. To the east, the state borders North Dakota and South Dakota. To the south is Wyoming and to the west and southwest is Idaho.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002606</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00767982</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:30</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MT</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MT</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002611 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002611">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Georgia</rdfs:label>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">GA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002611</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01705317</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Georgia</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Georgia is bordered on the south by Florida; on the east by the Atlantic Ocean and South Carolina; on the west by Alabama and by Florida in the extreme southwest; and on the north by Tennessee and North Carolina. The northern part of the state is in the Blue Ridge Mountains, a mountain range in the vast mountain system of the Appalachians. The central piedmont extends from the foothills to the fall line, where the rivers cascade down in elevation to the continental coastal plain of the southern part of the state.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:13</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-GA</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002878 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002878">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Delaware</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located on the Atlantic Coast in the Mid-Atlantic region of the United States. Delaware is located in the eastern section of the Delmarva Peninsula, between Delaware Bay and Chesapeake Bay. Delaware is bounded to the north by Pennsylvania; to the east by the Delaware River, Delaware Bay, New Jersey and the Atlantic Ocean; and to the west and south by Maryland.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">DE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002878</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779781</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:10</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-DE</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003097"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00009983"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00002888 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00002888">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Florida</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southeastern region of the United States, bordering Alabama to the northwest and Georgia to the northeast. Much of the land mass of the state is a large peninsula with the Gulf of Mexico to the west and south, and the Atlantic Ocean to the east.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Florida</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">F{language: Bulgarian}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00002888</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00294478</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:12</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-FL</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003097 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003097">
+        <rdfs:label rdf:datatype="&xsd;string">Middle Atlantic Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003125 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003125">
+        <rdfs:label rdf:datatype="&xsd;string">East North Central Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003142 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003142">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Illinois</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A midwestern state of the United States of America. The Northeastern border of Illinois is Lake Michigan. Its eastern border with Indiana is all of the land west of the Wabash River, and a north-south line above Post Vincennes, or 87deg31min30secW. Its northern border with Wisconsin is fixed at 42deg30minN. Its western border with Missouri and Iowa is the Mississippi River. Its southern border with Kentucky is the Ohio River. Illinois also borders Michigan, but only via a water boundary in Lake Michigan.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003142</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779784</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:17</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-IL</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Illinois</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">I{language: Bulgarian}</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003152 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003152">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Michigan</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A Midwestern state of the United States of America. Michigan consists of two peninsulas that lie between 82deg30minW to about 90deg30minW longitude, and are separated by the Straits of Mackinac. With the exception of two small areas that are drained by the Mississippi River by way of the Wisconsin River in the Upper Peninsula and by way of the Kankakee-Illinois River in the Lower Peninsula, Michigan is drained by the Great Lakes-Saint Lawrence watershed. The Great Lakes that border Michigan from east to west are Lake Erie, Lake Huron, Lake Michigan and Lake Superior. The state is bounded on the south by the states of Ohio and Indiana, sharing land and water boundaries with both.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003152</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779789</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:26</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MI</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Michigan</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003171 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003171">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">Commonwealth of Virginia</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state on the Atlantic Coast of the Southern United States. Virginia is bordered by Maryland and the District of Columbia to the north and east; the Atlantic Ocean to the east; by North Carolina and Tennessee to the south; by Kentucky to the west and by West Virginia to the north and west. Due to a peculiarity of Virginia&apos;s original charter, its boundary with Maryland does not extend past the low-water mark of the southern shore of the Potomac River, so Maryland and the District of Columbia contain the whole width of the river rather than splitting it between them and Virginia. The southern border is defined as the 36deg30min parallel north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003171</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779803</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:51</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:UA-VA</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">VA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Virginia</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003174 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003174">
+        <rdfs:label rdf:datatype="&xsd;string">Pacific Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003323 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003323">
+        <rdfs:label rdf:datatype="&xsd;string">West North Central Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003706 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003706">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00005862"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00054790"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003772 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003772">
+        <rdfs:label rdf:datatype="&xsd;string">Greater Antilles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003779 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003779">
+        <rdfs:label rdf:datatype="&xsd;string">West South Central Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003859 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003859">
+        <rdfs:label rdf:datatype="&xsd;string">East South Central Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003860 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003860">
+        <rdfs:label rdf:datatype="&xsd;string">South Atlantic Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003861 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003861">
+        <rdfs:label rdf:datatype="&xsd;string">Mountain Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003939 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003939">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Hawaii</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the United States, located on an archipelago in the central Pacific Ocean southwest of the continental United States, southeast of Japan, and northeast of Australia.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00003939</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779782</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">HI</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:15</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-HI</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00002459"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00002480"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00005861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003956 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003956">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00002459"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003957 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003957">
+        <rdf:type rdf:resource="&obo;GAZ_00003956"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006911"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003958 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003958">
+        <rdfs:label rdf:datatype="&xsd;string">Northern Mariana Islands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003959 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003959">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003960"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00003960 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00003960">
+        <rdfs:label rdf:datatype="&xsd;string">Virgin Islands Archipelago</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004411 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004411">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Tennessee</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Southern United States. The capital city is Nashville, and the largest city is Memphis. Tennessee borders eight other states: Kentucky and Virginia to the north; North Carolina to the east; Georgia, Alabama and Mississippi on the south; Arkansas and Missouri on the Mississippi River to the west.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004411</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01325873</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:47</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-TN</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">TN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Tennessee</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003859"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004413 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004413">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Utah</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A western state of the United States. Utah has three distinct geological regions: the Rocky Mountains, the Great Basin, and the Colorado Plateau.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004413</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01455989</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:49</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-UT</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">UT</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004414 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004414">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of West Virginia</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Appalachian, Upland South, and Mid-Atlantic regions of the United States, bordered by Virginia on the southeast, Kentucky on the southwest, Ohio on the northwest, and Pennsylvania and Maryland on the northeast. The capital and largest city is Charleston.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004414</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779805</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:54</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-WV</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">WV</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">West Virginia</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003860"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004421 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004421">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Ohio</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A Midwestern state of the United States. Ohio&apos;s southern border is defined by the Ohio River (with the border being at the 1793 low-water mark on the north side of the river), and much of the northern border is defined by Lake Erie. Ohio&apos;s neighbors are Pennsylvania to the east, Michigan to the northwest, Ontario Canada, to the north, Indiana to the west, Kentucky on the south, and West Virginia on the southeast.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004421</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01085497</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:39</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-OH</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">OH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Ohio</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004427 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004427">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of New Mexico</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southwestern region of the United States.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004427</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00897535</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:35</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NM</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NM</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004428 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004428">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of New Hampshire</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the New England region of the northeastern United States of America. It borders Massachusetts to the south, Vermont to the west, Maine to the east, and the Canadian province of Quebec to the north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004428</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779794</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:33</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NH</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NH</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004429 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004429">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Vermont</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the New England region of the northeastern United States of America. It is bordered by Massachusetts to the south, New Hampshire to the east, New York to the west, and the Canadian province of Quebec to the north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004429</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779802</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:50</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-VT</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">VT</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00006323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004430 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004430">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Mississippi</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Deep South of the United States. Jackson is the state capital and largest city. Mississippi is bordered on the north by Tennessee, on the east by Alabama, on the south by Louisiana and a narrow coast on the Gulf of Mexico, and on the west, across the Mississippi River, by Louisiana and Arkansas.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004430</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779790</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:28</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MS</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Mississippi</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003859"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004431 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004431">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Missouri</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Midwest region of the United States. Missouri is bounded on the north by Iowa; on the east, across the Mississippi River, by Illinois, Kentucky, and Tennessee; on the south by Arkansas; and on the west by Oklahoma, Kansas, and Nebraska (the last across the Missouri River).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004431</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779791</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:29</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-MO</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">MO</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004432 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004432">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Louisiana</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southern region of the United States of America. Louisiana is bordered to the west by the State of Texas; to the north by Arkansas; to the east by the State of Mississippi; and to the south by the Gulf of Mexico.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004432</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01629543</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:22</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-LA</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">LA</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003779"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004435 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004435">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Kansas</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the central region of the United States of America. Kansas is bordered by Nebraska on the north; Missouri on the east; Oklahoma on the south; and Colorado on the west.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004435</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00481813</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-KS</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">KS</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004438 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004438">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Iowa</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Midwestern region of the United States of America. Iowa is bordered by the Mississippi River on the east; the Missouri River and the Big Sioux River on the west; the northern boundary is a line along 43 degrees, 30 minutes north latitude. The southern border is the Des Moines River and a line along approximately 40 degrees 35 minutes north.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004438</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779785</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:19</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-IA</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004439 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004439">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Indiana</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A midwestern state of the United States of America. Indiana is bounded on the north by Lake Michigan and the state of Michigan; on the east by Ohio; on the south by Kentucky, with which it shares the Ohio River as a border; and on the west by Illinois. Indiana is one of the Great Lakes states.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004439</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00448508</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IN</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:18</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-IN</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Indiana</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003125"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004440 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004440">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">Commonwealth of Kentucky</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the East Central United States of America. Kentucky borders on seven states, from both the Midwest and the Southeast. West Virginia lies to the east, Virginia to the southeast, Tennessee to the south, Missouri to the west, Illinois and Indiana to the northwest, and Ohio to the north and northeast.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004440</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-KY</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">KY</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Kentucky</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">State of Kentucky {alternative name}</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003859"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004441 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004441">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Arkansas</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southern region of the United States. Arkansas shares a border with six states, with its eastern border largely defined by the Mississippi River. Arkansas shares its southern border with Louisiana, its northern border with Missouri, its eastern border with Tennessee and Mississippi, and its western border with Texas and Oklahoma.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AR</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004441</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:00068085</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:05</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-AR</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003779"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004442 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004442">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of North Dakota</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Midwestern and Western regions of the United States of America.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004442</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:38</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-ND</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ND</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004443 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004443">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of South Dakota</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Midwestern region of the United States of America.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004443</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01785534</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:46</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-SD</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">SD</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00004444 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00004444">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Nevada</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the western region of the United States of America. Nevada is almost entirely within the Basin and Range Province, and is broken up by many north-south mountain ranges. Most of these ranges have endorheic valleys between them, which belies the image portrayed by the term Great Basin. The southern third of the state, where the Las Vegas area is situated, is within the Mojave Desert.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00004444</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779793</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:32</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NV</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NV</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005070 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00005070">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Nebraska</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located on the Great Plains of the Midwestern United States and Western United States.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00005070</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779792</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:31</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-NE</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NE</oboInOwl:hasExactSynonym>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003323"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005861 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00005861">
+        <rdfs:label rdf:datatype="&xsd;string">Polynesia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00005862 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00005862">
+        <rdfs:label rdf:datatype="&xsd;string">Micronesia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006254 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006254">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Colorado</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the Rocky Mountain region of the United States of America.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CO</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00006254</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779779</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:08</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-CO</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006291 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006291">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Idaho</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state in the Pacific Northwest region of the United States of America. Idaho borders six states and one Canadian province, but does not border the Pacific Ocean at any point and is not, as such, a coastal state. The states of Washington and Oregon are to the west, Nevada and Utah are to the south, and Montana and Wyoming are to the east. The province of British Columbia, to the north, also shares a small (77 km) border with Idaho.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00006291</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779783</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ID</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:16</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-ID</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003861"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006323 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006323">
+        <rdfs:label rdf:datatype="&xsd;string">New England Division</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006470 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006470">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00007161"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006881 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006881">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">State of Alabama</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A state located in the southern region of the United States of America. It is bordered by Tennessee to the north, Georgia to the east, Florida and the Gulf of Mexico to the south, and Mississippi to the west.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Alabama</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">A{language: Bulgarian}</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">GAZ</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="&xsd;string">GAZ:00006881</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GNISID:01779775</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">INCITS38:01</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ISO3166-2:US-AL</oboInOwl:hasDbXref>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003859"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006911 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006911">
+        <rdfs:label rdf:datatype="&xsd;string">Samoan Archipelago</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00006935 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00006935">
+        <rdf:type rdf:resource="&obo;GAZ_00003956"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003772"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007109 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00007109">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00003958"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00005862"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007110 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00007110">
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00005862"/>
+        <obo:RO_0001025 rdf:resource="&obo;GAZ_00007111"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007111 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00007111">
+        <rdfs:label rdf:datatype="&xsd;string">Wake Island</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007113 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00007113"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00007161 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00007161">
+        <rdfs:label rdf:datatype="&xsd;string">Marshall Islands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00009983 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00009983">
+        <rdf:type rdf:resource="&obo;GAZ_00000448"/>
+        <rdfs:label rdf:datatype="&xsd;string">Delmarva Peninsula</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GAZ_00054790 -->
+
+    <owl:NamedIndividual rdf:about="&obo;GAZ_00054790">
+        <rdfs:label rdf:datatype="&xsd;string">Southern Marianas Islands</rdfs:label>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,13 @@
+# Ontobee SPARQL query for all teritories of US.
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+SELECT ?s ?label
+FROM <http://purl.obolibrary.org/obo/merged/GAZ> 
+WHERE {
+	?s rdf:type owl:NamedIndividual .
+        ?s rdfs:subClassOf ?o .
+        ?s rdfs:label ?label
+        filter (?o = <http://purl.obolibrary.org/obo/GAZ_00003956>)
+}    

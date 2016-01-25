@@ -10,13 +10,28 @@ http://purl.obolibrary.org/obo/SYMP_0000882 #high fever
 http://purl.obolibrary.org/obo/SYMP_0000879 #low-grade fever
 http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
 http://purl.obolibrary.org/obo/SYMP_0000124 #seizure
+http://purl.obolibrary.org/obo/SYMP_0000604 #wheezing
+http://purl.obolibrary.org/obo/SYMP_0000445 #faint
+http://purl.obolibrary.org/obo/SYMP_0000610 #dizzy
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/SYMP_0000613 #fever
-subClassOf http://purl.obolibrary.org/obo/VICO_0100000 # sickness
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
 
 http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
-subClassOf http://purl.obolibrary.org/obo/VICO_0100000 # sickness
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
+
+http://purl.obolibrary.org/obo/SYMP_0000124 #seizure
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
+
+http://purl.obolibrary.org/obo/SYMP_0000604 #wheezing
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
+
+http://purl.obolibrary.org/obo/SYMP_0000445 #faint
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
+
+http://purl.obolibrary.org/obo/SYMP_0000610 #dizzy
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
 
 [Source term retrieval setting]
 includeNoIntermediates
