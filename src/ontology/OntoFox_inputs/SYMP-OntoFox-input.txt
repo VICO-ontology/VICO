@@ -13,25 +13,15 @@ http://purl.obolibrary.org/obo/SYMP_0000124 #seizure
 http://purl.obolibrary.org/obo/SYMP_0000604 #wheezing
 http://purl.obolibrary.org/obo/SYMP_0000445 #faint
 http://purl.obolibrary.org/obo/SYMP_0000610 #dizzy
+http://purl.obolibrary.org/obo/SYMP_0000514 #respiratory system and chest symptom
+http://purl.obolibrary.org/obo/SYMP_0000596 #convulsion
+http://purl.obolibrary.org/obo/SYMP_0000487 #rash
+http://purl.obolibrary.org/obo/SYMP_0000576 #chest pain
+http://purl.obolibrary.org/obo/SYMP_0019153 #shortness of breath
 
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/SYMP_0000613 #fever
+http://purl.obolibrary.org/obo/SYMP_0000462 #symptom
 subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
-
-http://purl.obolibrary.org/obo/SYMP_0019145 #vomiting
-subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
-
-http://purl.obolibrary.org/obo/SYMP_0000124 #seizure
-subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
-
-http://purl.obolibrary.org/obo/SYMP_0000604 #wheezing
-subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
-
-http://purl.obolibrary.org/obo/SYMP_0000445 #faint
-subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
-
-http://purl.obolibrary.org/obo/SYMP_0000610 #dizzy
-subClassOf http://purl.obolibrary.org/obo/VICO_0100001 #sickness
 
 [Source term retrieval setting]
 includeNoIntermediates

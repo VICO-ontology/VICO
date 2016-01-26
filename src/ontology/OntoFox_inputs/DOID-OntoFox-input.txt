@@ -29,10 +29,28 @@ http://purl.obolibrary.org/obo/DOID_7148 #rheumatoid arthritis
 http://purl.obolibrary.org/obo/DOID_409 #liver disease
 http://purl.obolibrary.org/obo/DOID_8659 #chickenpox
 http://purl.obolibrary.org/obo/DOID_533 #thymus gland disease
+http://purl.obolibrary.org/obo/DOID_0060058 #lymphoma
+http://purl.obolibrary.org/obo/DOID_2583 #agammaglobulinemia
+http://purl.obolibrary.org/obo/DOID_9074 #SLE
+http://purl.obolibrary.org/obo/DOID_417 #autoimmune disease
+http://purl.obolibrary.org/obo/DOID_2723 #eczema
+http://purl.obolibrary.org/obo/DOID_8504 #impetigo
+http://purl.obolibrary.org/obo/DOID_8536 #shigles
+http://purl.obolibrary.org/obo/DOID_8893 #psoriasis
+http://purl.obolibrary.org/obo/DOID_6543 #acne
+http://purl.obolibrary.org/obo/DOID_2734 #darier's disease
+http://purl.obolibrary.org/obo/DOID_5844 #myocardial infarction
+http://purl.obolibrary.org/obo/DOID_8805 #angina
+http://purl.obolibrary.org/obo/DOID_6000 #congestive heart failure
+http://purl.obolibrary.org/obo/DOID_0050700 #cardiomyopathy
+http://purl.obolibrary.org/obo/DOID_6713 #stroke
+http://purl.obolibrary.org/obo/DOID_224 #transient ischemic attack
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/DOID_4 #disease
 subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
+
+
 
 [Source term retrieval setting]
 includeNoIntermediates

@@ -129,6 +129,7 @@ http://purl.obolibrary.org/obo/VO_0000299 # company
 http://purl.obolibrary.org/obo/VO_0000001 # vaccine
 http://purl.obolibrary.org/obo/VO_0000544 # human vaccinee
 http://purl.obolibrary.org/obo/VO_0003020 # intranasal vaccination
+http://purl.obolibrary.org/obo/VO_0000487 # typhoid live oral vaccine
 
 
 [Top level source term URIs and target direct superclass URIs]

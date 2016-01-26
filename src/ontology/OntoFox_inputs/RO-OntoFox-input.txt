@@ -6,6 +6,7 @@ RO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/RO_0002180 # has component
+http://purl.obolibrary.org/obo/RO_0000086 #has_quality
 
 
 [Top level source term URIs and target direct superclass URIs]
