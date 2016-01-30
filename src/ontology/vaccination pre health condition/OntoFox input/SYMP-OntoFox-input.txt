@@ -21,7 +21,7 @@ http://purl.obolibrary.org/obo/SYMP_0019153 #shortness of breath
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/SYMP_0000462 #symptom
-subClassOf http://purl.obolibrary.org/obo/PATO_0001237 # quality of a single physical entity
+subClassOf http://purl.obolibrary.org/obo/VICO_0100001 # sickness
 
 [Source term retrieval setting]
 includeNoIntermediates

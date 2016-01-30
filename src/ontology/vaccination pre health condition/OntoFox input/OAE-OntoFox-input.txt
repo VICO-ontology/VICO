@@ -13,7 +13,9 @@ http://purl.obolibrary.org/obo/OAE_0000004 #vaccine adverse event
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OAE_0000001
-subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+
+http://purl.obolibrary.org/obo/OAE_0000001
+subClassOf http://purl.obolibrary.org/obo/VICO_0100000
 
 [Source term retrieval setting]
 includeNoIntermediates

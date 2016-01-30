@@ -62,12 +62,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/PATO_0001237 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0001237"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SYMP_0000124 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000124">
@@ -100,7 +94,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000462">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptom</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001237"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VICO_0100001"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A symptom is a perceived change in function, sensation, loss, disturbance or appearance reported by a patient indicative of a disease.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SYMP:0000462</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SyOID:14974</oboInOwl:hasDbXref>
@@ -294,6 +288,12 @@
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptoms</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/symp.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VICO_0100001"/>
 </rdf:RDF>
 
 

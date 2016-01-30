@@ -173,17 +173,11 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OAE_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OAE_0000001">
         <rdfs:label>adverse event</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/VICO_0100000"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000116>YH: The main scope of OAE includes: (1) represent terms and relations in the area of adverse events, (2) assess possible associations between an adverse event and a medical intervention, particularly, identify any causal effect of a medical intervention to an adverse event; and (2) understand the mechanism (including molecular mechanisms) of causal adverse events.</obo:IAO_0000116>
         <rdfs:comment>The OAE official website is: http://www.oae-ontology.org/.</rdfs:comment>
@@ -286,6 +280,12 @@
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Serious_adverse_event</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/oae.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VICO_0100000 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/VICO_0100000"/>
     
 
 
