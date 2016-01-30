@@ -12,24 +12,24 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/vico/DOID_import.owl" uri="DOID_import.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ico.owl" uri="vico-instances.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/bfo.owl" uri="BFO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico.owl" uri="vico.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/DOID_import.owl" uri="DOID_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/GAZ_USstates_import.owl" uri="GAZ_USstates_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/GAZ_others_import.owl" uri="GAZ_others_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/ICO_import.owl." uri="ICO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/OAE_import.owl" uri="OAE_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/PATO_import.owl" uri="PATO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/RO_import.owl." uri="RO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/SYMP_import.owl" uri="SYMP_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/VO_import.owl" uri="VO_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vico/healthconditionvocabulary.owl" uri="healthconditionvocabulary.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.rdf"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="http://purl.obolibrary.org/obo/vicodemo.owl" uri="vicodemo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="shadowed:http://purl.obolibrary.org/obo/vico/DOID_import.owl" uri="vaccination%20pre%20health%20condition/DOID_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="shadowed:http://purl.obolibrary.org/obo/vico/OAE_import.owl" uri="vaccination%20pre%20health%20condition/OAE_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="shadowed:http://purl.obolibrary.org/obo/vico/SYMP_import.owl" uri="vaccination%20pre%20health%20condition/SYMP_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1454133119351" name="shadowed:http://purl.obolibrary.org/obo/vico/healthconditionvocabulary.owl" uri="vaccination%20pre%20health%20condition/healthconditionvocabulary.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/bfo.owl" uri="BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico.owl" uri="vico.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/DOID_import.owl" uri="DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/GAZ_USstates_import.owl" uri="GAZ_USstates_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/GAZ_others_import.owl" uri="GAZ_others_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/ICO_import.owl." uri="ICO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/OAE_import.owl" uri="OAE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/PATO_import.owl" uri="PATO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/RO_import.owl." uri="RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/SYMP_import.owl" uri="SYMP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/VO_import.owl" uri="VO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vico/healthconditionvocabulary.owl" uri="healthconditionvocabulary.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="duplicate:http://purl.obolibrary.org/obo/vico_merged.owl" uri="release_merged_file/vico_merged.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="http://purl.obolibrary.org/obo/vicodemo.owl" uri="vicodemo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="shadowed:http://purl.obolibrary.org/obo/vico/DOID_import.owl" uri="vaccination%20pre%20health%20condition/DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="shadowed:http://purl.obolibrary.org/obo/vico/OAE_import.owl" uri="vaccination%20pre%20health%20condition/OAE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="shadowed:http://purl.obolibrary.org/obo/vico/SYMP_import.owl" uri="vaccination%20pre%20health%20condition/SYMP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454168514064" name="shadowed:http://purl.obolibrary.org/obo/vico/healthconditionvocabulary.owl" uri="vaccination%20pre%20health%20condition/healthconditionvocabulary.owl"/>
     </group>
 </catalog>
