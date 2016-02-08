@@ -3,11 +3,17 @@ VICO is an application ontology for vaccination/immunization informed consent bu
 
 ### Access 
 
-####VICO development files include the VICO OWL file and other import files contains portion of external ontologies. To access VICO development version, please download the the whole project, and find the related files from ../src/ontology/ folder.
+VICO development files include the VICO OWL file and other import files contains portion of external ontologies. To access VICO development version, please download the the whole project, and find the related files from ../src/ontology/ folder.
 
-####VICO release file is a merged file of VICO owl file and other improted files described above. VICO is released in both OWL file format and RDF file format.
-VICO released access for OWL file: https://raw.githubusercontent.com/VICO-ontology/VICO/master/src/ontology/release_merged_file/vico_merged.owl
-VICO released access fro RDF file: https://raw.githubusercontent.com/VICO-ontology/VICO/master/src/ontology/release_merged_file/vico_merged.rdf
+VICO release file is a merged file made up of VICO owl file and other improted files described above. VICO is released in both OWL file format and RDF file format.
+
+  VICO release OWL file access:
+  
+  https://raw.githubusercontent.com/VICO-ontology/VICO/master/src/ontology/release_merged_file/vico_merged.owl
+  
+  VICO release RDF file access:
+  
+  https://raw.githubusercontent.com/VICO-ontology/VICO/master/src/ontology/release_merged_file/vico_merged.rdf
 
 
 #### Publication:
