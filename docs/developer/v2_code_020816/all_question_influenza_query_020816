@@ -1,0 +1,42 @@
+# query all question type of influenza vaccine
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+PREFIX is_about_vaccination: <http://purl.obolibrary.org/obo/VICO_0000017>
+PREFIX influenza_vaccination: <http://purl.obolibrary.org/obo/VICO_0000041>
+
+SELECT distinct ?label ?label1 (count(?label1) as ?label_count)
+WHERE
+{
+  ?sp_questionnaire rdfs:subClassOf* questionnaire: .
+  ?sp_questionnaire rdfs:subClassOf ?sp_axiom .
+  ?sp_axiom owl:onProperty is_about_vaccination:; owl:someValuesFrom ?vaccination .
+  ?vaccination rdfs:subClassOf* influenza_vaccination: .
+
+  {
+  ?sp_questionnaire rdfs:subClassOf ?questionnaire_axiom .
+  ?sp_questionnaire rdfs:label ?label1 .
+  ?questionnaire_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:subClassOf* ?question_kind .
+  ?question_kind rdfs:subClassOf obo:ICO_0000141 .
+  ?question_kind rdfs:label ?label .
+}
+
+}
+Group By ?label ?label1
+Order By  ?label DESC(?label_count) 
+
+
+# result in file: 
+
+        
+    result_query_all_question_influenza_020816
+
+# Problem:
+One questionnaire was defined as is_about_vaccination  ('pneumococcal vaccination' or 'influenza vaccination'),
+can't be queried out.

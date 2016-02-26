@@ -1,0 +1,14 @@
+label	label1	label_count
+allergy question	questionnaire for UM College Park injectable influenza vaccination consent	5
+allergy question	questionnaire for UM College Park flumist vaccination consent	4
+allergy question	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	2
+current health condition question	questionnaire for UM College Park flumist vaccination consent	6
+current health condition question	questionnaire for UM College Park injectable influenza vaccination consent	3
+current health condition question	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	2
+immunocompromisation question	questionnaire for UM College Park flumist vaccination consent	2
+previous medical precedure question	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	3
+previous medical precedure question	questionnaire for UM College Park flumist vaccination consent	1
+previous medical precedure question	questionnaire for UM College Park injectable influenza vaccination consent	1
+question about vaccination patient age	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	1
+question for woman	questionnaire for UM College Park injectable influenza vaccination consent	1
+question whether bring imunization record card	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	1

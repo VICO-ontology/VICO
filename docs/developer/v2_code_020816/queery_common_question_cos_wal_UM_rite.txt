@@ -1,0 +1,42 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT ?question_label 
+
+WHERE
+{
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire_axiom1 .
+?questionnaire_axiom1 owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire_axiom2 .
+?questionnaire_axiom2 owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire2 rdfs:label ?label2 .
+ ?questionnaire3 rdfs:subClassOf* questionnaire: .
+  ?questionnaire3 rdfs:subClassOf ?questionnaire_axiom3 .
+?questionnaire_axiom3 owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire3 rdfs:label ?label3 .
+ ?questionnaire4 rdfs:subClassOf* questionnaire: .
+  ?questionnaire4 rdfs:subClassOf ?questionnaire_axiom4 .
+?questionnaire_axiom4 owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?questionnaire4 rdfs:label ?label4 .
+
+  ?question rdfs:label ?question_label .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+  FILTER REGEX(str(?label3), "UM") .
+  FILTER REGEX(str(?label4), "Rite Aid") .
+
+
+
+
+}
+GROUP BY ?question_label
+
+

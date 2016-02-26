@@ -1,0 +1,4 @@
+[question_label]
+question whether allergic to egg
+question whether allergic to latex
+question whether allergic to medication

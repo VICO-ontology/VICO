@@ -1,0 +1,15 @@
+label	label1	label_count
+allergy question	questionnaire for Costco vaccination  consent	5
+allergy question	questionnaire for Walgreens vaccination  consent	4
+allergy question	questionnaire for Manitoba vaccination consent	2
+current health condition question	questionnaire for Costco vaccination  consent	4
+current health condition question	questionnaire for Walgreens vaccination  consent	3
+current health condition question	questionnaire for Manitoba vaccination consent	2
+current treatment question	questionnaire for Walgreens vaccination  consent	10
+current treatment question	questionnaire for Costco vaccination  consent	2
+current treatment question	questionnaire for Manitoba vaccination consent	1
+immunocompromisation question	questionnaire for Walgreens vaccination  consent	7
+immunocompromisation question	questionnaire for Costco vaccination  consent	6
+previous medical precedure question	questionnaire for Walgreens vaccination  consent	4
+previous medical precedure question	questionnaire for Costco vaccination  consent	2
+previous medical precedure question	questionnaire for Manitoba vaccination consent	1

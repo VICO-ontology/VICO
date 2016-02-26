@@ -1,0 +1,37 @@
+label	label1	label_count
+question whether allergic to food	questionnaire for Costco vaccination  consent	2
+question whether allergic to food	questionnaire for Rite Aid vaccination consent in California	2
+question whether allergic to food	questionnaire for UM College Park flumist vaccination consent	2
+question whether allergic to food	questionnaire for UM College Park injectable influenza vaccination consent	2
+question whether allergic to food	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	1
+question whether allergic to food	questionnaire for Rite Aid non-flu vaccination consent in South Carolina	1
+question whether allergic to food	questionnaire for Rite Aid vaccination consent in North Carolina	1
+question whether allergic to food	questionnaire for Rite Aid vaccination consent in other states than SC, NC and CA	1
+question whether allergic to food	questionnaire for Walgreens vaccination  consent	1
+question whether allergic to latex	questionnaire for Costco vaccination  consent	1
+question whether allergic to latex	questionnaire for Rite Aid non-flu vaccination consent in South Carolina	1
+question whether allergic to latex	questionnaire for Rite Aid vaccination consent in California	1
+question whether allergic to latex	questionnaire for Rite Aid vaccination consent in North Carolina	1
+question whether allergic to latex	questionnaire for Rite Aid vaccination consent in other states than SC, NC and CA	1
+question whether allergic to latex	questionnaire for UM College Park flumist vaccination consent	1
+question whether allergic to latex	questionnaire for UM College Park injectable influenza vaccination consent	1
+question whether allergic to latex	questionnaire for Walgreens vaccination  consent	1
+question whether allergic to latex	screening questionnaire for UM College Park smallpox vaccination consent	1
+question whether allergic to medication	screening questionnaire for UM College Park smallpox vaccination consent	4
+question whether allergic to medication	questionnaire for Costco vaccination  consent	1
+question whether allergic to medication	questionnaire for Rite Aid non-flu vaccination consent in South Carolina	1
+question whether allergic to medication	questionnaire for Rite Aid vaccination consent in California	1
+question whether allergic to medication	questionnaire for Rite Aid vaccination consent in North Carolina	1
+question whether allergic to medication	questionnaire for Rite Aid vaccination consent in other states than SC, NC and CA	1
+question whether allergic to medication	questionnaire for UM College Park flumist vaccination consent	1
+question whether allergic to medication	questionnaire for UM College Park injectable influenza vaccination consent	1
+question whether allergic to medication	questionnaire for Walgreens vaccination  consent	1
+question whether allergic to vaccine	questionnaire for Costco vaccination  consent	1
+question whether allergic to vaccine	questionnaire for Walgreens vaccination  consent	1
+question whether allergic to vaccine	screening questionnaire for UM College Park smallpox vaccination consent	1
+question whether allergic to vaccine component	questionnaire for Rite Aid  injectable flu vaccination consent in South Carolina	1
+question whether allergic to vaccine component	questionnaire for Rite Aid non-flu vaccination consent in South Carolina	1
+question whether allergic to vaccine component	questionnaire for Rite Aid vaccination consent in California	1
+question whether allergic to vaccine component	questionnaire for Rite Aid vaccination consent in North Carolina	1
+question whether allergic to vaccine component	questionnaire for Rite Aid vaccination consent in other states than SC, NC and CA	1
+question whether allergic to vaccine component	questionnaire for UM College Park injectable influenza vaccination consent	1

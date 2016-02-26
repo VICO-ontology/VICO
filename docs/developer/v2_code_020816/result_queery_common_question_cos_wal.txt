@@ -1,0 +1,11 @@
+[question_label]
+X-ray treatment question
+question on blood transfusion in past year
+question on cancer
+question on leukemia
+question on vaccination in past 4 weeks
+question whether allergic to egg
+question whether allergic to latex
+question whether allergic to medication
+question whether allergic to vaccine
+seizure disorder question

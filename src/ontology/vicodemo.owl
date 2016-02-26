@@ -81,9 +81,9 @@
 
  
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100001 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100001 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100001">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100001">
         <rdf:type rdf:resource="&obo;VICO_0000177"/>
         <rdf:type>
             <owl:Class>
@@ -125,9 +125,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100002 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100002 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100002">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100002">
         <rdf:type rdf:resource="&obo;VICO_0000177"/>
         <rdf:type>
             <owl:Class>
@@ -169,9 +169,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100003 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100003 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100003">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100003">
         <rdf:type rdf:resource="&obo;VICO_0000177"/>
         <rdf:type>
             <owl:Class>
@@ -213,9 +213,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100004 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100004 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100004">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100004">
         <rdf:type rdf:resource="&obo;VICO_0000177"/>
         <rdf:type>
             <owl:Class>
@@ -257,9 +257,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100005 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100005 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100005">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100005">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
         <rdf:type>
             <owl:Class>
@@ -301,36 +301,36 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100006 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100006 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100006">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100006">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
         <rdfs:label xml:lang="en">answers of Costco patient 6</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100007 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100007 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100007">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100007">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
         <rdfs:label xml:lang="en">answers of Costco patient 7</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100008 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100008 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100008">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100008">
         <rdf:type rdf:resource="&obo;VICO_0000008"/>
         <rdfs:label xml:lang="en">answers of Costco patient 8</rdfs:label>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100009 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100009 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100009">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100009">
         <rdf:type rdf:resource="&obo;VICO_0000009"/>
         <rdf:type>
             <owl:Class>
@@ -372,9 +372,9 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/VICO_0100010 -->
+    <!-- http://purl.obolibrary.org/obo/VICO_1100010 -->
 
-    <owl:NamedIndividual rdf:about="&obo;VICO_0100010">
+    <owl:NamedIndividual rdf:about="&obo;VICO_1100010">
         <rdf:type rdf:resource="&obo;VICO_0000009"/>
         <rdfs:label xml:lang="en">answers of Walgreens patient 10</rdfs:label>
     </owl:NamedIndividual>

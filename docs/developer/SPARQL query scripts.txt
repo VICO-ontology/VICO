@@ -125,7 +125,7 @@ WHERE
   ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
   ?questionnaire2 rdfs:label ?label2 .
   ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
-?question rdfs:label ?label3 .
+  ?question rdfs:label ?label3 .
   FILTER REGEX(str(?label1), "Costco") .
   FILTER REGEX(str(?label2), "Walgreens") .
 }

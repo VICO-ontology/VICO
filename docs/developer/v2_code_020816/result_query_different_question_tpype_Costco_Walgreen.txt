@@ -1,0 +1,10 @@
+question	organization
+allergy question	Costco
+current health condition question	Costco
+current health condition question	Walgreens
+current treatment question	Costco
+current treatment question	Walgreens
+immunocompromisation question	Costco
+immunocompromisation question	Walgreens
+previous medical precedure question	Costco
+previous medical precedure question	Walgreens

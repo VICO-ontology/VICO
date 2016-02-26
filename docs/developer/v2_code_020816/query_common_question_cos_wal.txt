@@ -1,0 +1,27 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX obo: <http://purl.obolibrary.org/obo/>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
+PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
+
+SELECT ?question_label 
+
+WHERE
+{
+  ?questionnaire1 rdfs:subClassOf questionnaire: .
+  ?questionnaire1 rdfs:subClassOf ?questionnaire1_axiom .
+  ?questionnaire1 rdfs:label ?label1 .
+  ?questionnaire1_axiom owl:onProperty has_component:; owl:someValuesFrom ?question .
+?questionnaire2 rdfs:subClassOf questionnaire: .
+  ?questionnaire2 rdfs:subClassOf ?questionnaire2_axiom .
+  ?questionnaire2 rdfs:label ?label2 .
+  ?questionnaire2_axiom  owl:onProperty has_component:; owl:someValuesFrom ?question .
+  ?question rdfs:label ?question_label .
+  FILTER REGEX(str(?label1), "Costco") .
+  FILTER REGEX(str(?label2), "Walgreens") .
+
+
+
+}

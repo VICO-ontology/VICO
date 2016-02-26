@@ -1,4 +1,4 @@
-== query different questions in Walgreen and Costco
+# try to get the second level of the question type. But the instance was shouing.
 
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -6,8 +6,10 @@ PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 PREFIX documented_by: <http://purl.obolibrary.org/obo/VICO_0000025>
+PREFIX question: <http://purl.obolibrary.org/obo/ICO_0000141>
 
-SELECT ?question ?organization
+
+SELECT ?question ?organization ?question_type_2
 WHERE {
   ?questionnaire rdfs:subClassOf questionnaire: .
   ?questionnaire rdfs:subClassOf ?questionnaire_org .
@@ -24,7 +26,21 @@ WHERE {
           FILTER (str(?orgLabel1)="Costco" || str(?orgLabel1)= "Walgreens") . }
         group by ?question_id
         having (count(distinct ?organization1) = 1) }
-	?question_id rdfs:label ?question .
+    ?question_id rdfs:subClassOf* ?question_type_2_id .
+	{ SELECT DISTINCT ?question_type_2_id
+	WHERE{
+	   ?question_type_2_id  rdfs:subClassOf ?question_type .
+       ?question_type_2_id rdfs:subClassOf* question: .
+       ?question_type rdfs:subClassOf question: .
+	   ?question_type rdfs:label ?question .
+	   }
+	 }
+    
+	
 	?organization_id rdfs:label ?organization .
+    ?question_typ_2_id rdfs:label ?question_type_2
 }
-ORDER BY ?organization
+
+
+GROUP BY ?question ?organization ?question_type_2
+ORDER BY ?question

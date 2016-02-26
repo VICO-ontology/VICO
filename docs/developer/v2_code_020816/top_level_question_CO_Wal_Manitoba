@@ -1,6 +1,3 @@
-===  Search top level questions being asked in Walgreens, Costco, and Manitoba 
-=== search can be successfully carried out in Protege 5.0.0 beta-15; error with Ontobee SPARQL endpoint has been reported to Github VICO issue tracker
-
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -43,4 +40,4 @@ WHERE
 }
 Group By ?label ?label1
 Order By  ?label DESC(?label_count) 
-
+        

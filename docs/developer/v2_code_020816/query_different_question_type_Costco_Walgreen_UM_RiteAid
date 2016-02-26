@@ -1,11 +1,10 @@
-== query different questions in Walgreen and Costco
-
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
 PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 PREFIX documented_by: <http://purl.obolibrary.org/obo/VICO_0000025>
+PREFIX question: <http://purl.obolibrary.org/obo/ICO_0000141>
 
 SELECT ?question ?organization
 WHERE {
@@ -21,10 +20,14 @@ WHERE {
           ?questionnaire1 rdfs:subClassOf ?questionnaire1_ques .
           ?questionnaire1_ques  owl:onProperty has_component:; owl:someValuesFrom ?question_id .
           ?organization1 rdfs:label ?orgLabel1 .
-          FILTER (str(?orgLabel1)="Costco" || str(?orgLabel1)= "Walgreens") . }
+          FILTER (str(?orgLabel1)="Costco" || str(?orgLabel1)= "Walgreens" || str(?orgLabel1)="Rite Aid" || str(?orgLabel1)="College Park") . }
         group by ?question_id
         having (count(distinct ?organization1) = 1) }
-	?question_id rdfs:label ?question .
+    ?question_id rdfs:subClassOf* ?question_type .
+    ?question_type rdfs:subClassOf question: .
+	?question_type rdfs:label ?question .
 	?organization_id rdfs:label ?organization .
 }
-ORDER BY ?organization
+
+GROUP BY ?question ?organization
+ORDER BY ?question

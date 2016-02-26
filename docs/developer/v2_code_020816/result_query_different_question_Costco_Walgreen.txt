@@ -1,0 +1,23 @@
+question	organization
+cortisone treatment question	Costco
+immunocompromisation question	Costco
+question on asthma or wheezing history	Costco
+question on long-term heart disease	Costco
+question on reaction after immunization	Costco
+question whether allergic to food	Costco
+question whether currently sick	Costco
+question on CSF leak	Walgreens
+question on TB skin test in past 4 weeks	Walgreens
+question on asplenia	Walgreens
+question on azathioprine or 6-mercaptopurine usage	Walgreens
+question on cochlear implant	Walgreens
+question on current aspirin medication	Walgreens
+question on high-dose methotrexate usage	Walgreens
+question on high-dose steroid therapy for longer than 2 weeks	Walgreens
+question on home infusion	Walgreens
+question on weekly injection	Walgreens
+question on weekly injection of adalmumab	Walgreens
+question on weekly injection of etanercept	Walgreens
+question on weekly injection of infliximab	Walgreens
+question on whether fainted or felt dizzy after immunization	Walgreens
+question whether currently sick with a moderate to high fever, vomiting/diarrhea	Walgreens

@@ -36,7 +36,7 @@ PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX obo: <http://purl.obolibrary.org/obo/>
-PREFIX questionnaire: <http://purl.obolibrary.org/obo/OBI_0001000>
+PREFIX questionnaire: <http://purl.obolibrary.org/obo/VICO_0000004>
 PREFIX has_component: <http://purl.obolibrary.org/obo/RO_0002180>
 
 SELECT distinct ?question ?label
