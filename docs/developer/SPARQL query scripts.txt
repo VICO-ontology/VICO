@@ -1,3 +1,17 @@
+#Example: 
+#To find out vaccines that have egg protein allergen. 
+
+PREFIX has_vaccine_allergen: <http://purl.obolibrary.org/obo/VO_0000531>
+PREFIX chicken_egg_protein_allergen: <http://purl.obolibrary.org/obo/VO_0000912>
+SELECT distinct ?vaccine_label ?vaccine
+FROM <http://purl.obolibrary.org/obo/merged/VO>
+WHERE
+{
+   ?vaccine rdfs:label ?vaccine_label .
+   ?vaccine rdfs:subClassOf ?vaccine_restriction .
+   ?vaccine_restriction owl:onProperty has_vaccine_allergen:; owl:someValuesFrom chicken_egg_protein_allergen: .
+}
+
 #Example 3: 
 #To find the number of all class terms of an ontology
 #To find all object properties, use owl:ObjectProperty instead of owl:Class
