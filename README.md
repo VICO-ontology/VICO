@@ -17,4 +17,4 @@ VICO release file is a merged file made up of VICO owl file and other improted f
 
 
 #### Publication:
-Lin Y, Zheng J, He Y. Ontology-based representation and analysis of vaccination informed consent. Vaccines and Drug Ontology Studies workshop (VDOS-2015), in connection with International Conference on Biomedical Ontologies (ICBO), Lisbon, Portugal, July 27-30, 2015.
+Lin Y, Zheng J, He Y. Ontology-based representation and analysis of vaccination informed consent. Vaccines and Drug Ontology Studies workshop (VDOS-2015), in connection with International Conference on Biomedical Ontologies (ICBO), Lisbon, Portugal, July 27-30, 2015. https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0062-4
